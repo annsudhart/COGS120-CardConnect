@@ -1,0 +1,43 @@
+.picture-name {
+	padding: 25px 0 25px 0;
+	background: linear-gradient(180deg, #bfbfbf 50%, white 50%);
+}
+
+.picture-name img {
+	width: 50%;
+}
+
+.picture-name input {
+	display: block;
+	border: none;
+	border-bottom: 1px solid #000000;
+	margin: 0 auto;
+}
+
+.input-fields input {
+	display: block;
+	border: none;
+	border-bottom: 1px solid #000000;	
+}				
+
+.input-fields {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.input-fields span {
+	display: block;
+	overflow: hidden;
+}
+
+.input-fields input {
+	width: 100%;
+}
+
+.placeholder {
+	text-align: left;
+}
+
+.placeholder img {
+	float: left;
+}
