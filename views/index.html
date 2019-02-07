@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <head>
   <title> Card Connect </title>
-  <link rel="stylesheet" href="main.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
     <div class="phone-screen">
       <div id="topbar">
         <h1> Contacts </h1>
-        <div id="new-contact">+</div>
+        <div id="new-contact"><a href="newcontact.html">+</a></div>
       </div>
       <div id="searchbar">
         <input type="text" id="search" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+        <div class="dropdown">
+		<button onclick="myFunction()" class="dropbtn">Dropdown</button>
+		<div id="myDropdown" class="dropdown-content">
+			<a href="#letter-a">A</a>
+			<a href="#letter-b">B</a>
+			<a href="#letter-c">C</a>
+			<a href="#letter-d">D</a>
+			
+		</div>
+</div>
+      </div>
       </div>
       <div class="letter-cluster" id="letter-a">
         <div class="letter">A</div>
