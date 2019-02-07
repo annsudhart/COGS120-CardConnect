@@ -1,0 +1,81 @@
+body {
+  margin: 16px;
+  text-align: center;
+  margin: 0px;
+
+  font-family: Roboto;
+  font-style: normal;
+  line-height: normal;
+}
+
+div {
+  margin: 0px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.phone-screen {
+  /* iPhone 8.1 */
+
+  position: relative;
+  margin: 50px auto;
+  width: 375px;
+  height: 667px;
+  background: #FFFFFF;
+
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  /* border-radius: 50px; */
+}
+
+#topbar {
+  position: relative;
+  width: 375px;
+  height: 107px;
+  left: 0px;
+  top: 0px;
+
+  border: 1px solid #B4B4B4;
+}
+
+#topbar h1 {
+  position: absolute;
+  width: 121px;
+  height: 36px;
+  left: 126px;
+  top: 30px;
+
+  font-weight: bold;
+  font-size: 30px;
+
+  color: #000000;
+}
+
+#searchbar {
+  width: 375px;
+  height: 75px;
+  left: 0px;
+  top: 106px;
+
+  background: #E5E5E5;
+}
+
+#search {
+  width: 350px;
+  height: 40px;
+  left: 12px;
+  top: 124px;
+  margin-top: 15px;
+
+  font-size: 18px;
+  color: #B4B4B4;
+
+
+  background: #FFFFFF;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
