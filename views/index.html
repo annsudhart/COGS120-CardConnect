@@ -4,58 +4,67 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script src="https://code.jquery.com/jquery-3.1.0.js"
+        integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="phone-screen">
-      <div id="topbar">
-        <h1> Contacts </h1>
-        <div id="new-contact"><a href="newcontact.html">+</a></div>
+  <div class="phone-screen">
+    <div id="topbar">
+      <div class="topbar-item" id="header-text"> Contacts </div>
+      <div class="topbar-item" id="icon-plus"><a href="newcontact.html"><img src="../images/icon-plus.svg"/></a></div>
+    </div>
+    <div id="searchbar">
+      <input type="text" id="search" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+    </div>
+    <div class="dropdown">
+      <button onclick="myFunction()" class="searchbar-content dropbtn">Dropdown</button>
+      <div id="myDropdown" class="searchbar-content">
+        <a href="#letter-a">A</a>
+        <a href="#letter-b">B</a>
+        <a href="#letter-c">C</a>
+        <a href="#letter-d">D</a>
       </div>
-      <div id="searchbar">
-        <input type="text" id="search" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
-        <div class="dropdown">
-		<button onclick="myFunction()" class="dropbtn">Dropdown</button>
-		<div id="myDropdown" class="dropdown-content">
-			<a href="#letter-a">A</a>
-			<a href="#letter-b">B</a>
-			<a href="#letter-c">C</a>
-			<a href="#letter-d">D</a>
-			
-		</div>
-</div>
-      </div>
-      </div>
+    </div>
+    <div id="contact-info">
       <div class="letter-cluster" id="letter-a">
         <div class="letter">A</div>
         <ul class="letter-names">
-          <li>Anthony Rodriguez</li>
-          <li>Andrea Sudharta</li>
-          <li>Ashley Cantu</li>
+          <li><a href="newcontact.html">Anthony Rodriguez</a></li>
+          <li><a href="newcontact.html">Andrea Sudharta</a></li>
+          <li><a href="newcontact.html">Ashley Cantu</a></li>
         </ul>
       </div>
       <div class="letter-cluster" id="letter-b">
         <div class="letter">B</div>
         <ul class="letter-names">
-          <li>Ben Sampson</li>
-          <li>Brandon Bird</li>
-          <li>Brian Moon</li>
+          <li><a href="newcontact.html">Ben Sampson</a></li>
+          <li><a href="newcontact.html">Brandon Bird</a></li>
+          <li><a href="newcontact.html">Brian Moon</a></li>
         </ul>
       </div>
       <div class="letter-cluster" id="letter-c">
         <div class="letter">C</div>
         <ul class="letter-names">
-          <li>Camella Lehmann</li>
-          <li>Chance Braun</li>
-          <li>Christian Cuevas</li>
+          <li><a href="newcontact.html">Camella Lehmann</a></li>
+          <li><a href="newcontact.html">Chance Braun</a></li>
+          <li><a href="newcontact.html">Christian Cuevas</a></li>
         </ul>
       </div>
       <div class="letter-cluster" id="letter-d">
         <div class="letter">D</div>
         <ul class="letter-names">
-          <li>Daniel Schuyler</li>
-          <li>Dorothy Emanuel</li>
+          <li><a href="newcontact.html">Daniel Schuyler</a></li>
+          <li><a href="newcontact.html">Dorothy Emanuel</a></li>
         </ul>
       </div>
     </div>
+  </div>
 </body>
 </html>
