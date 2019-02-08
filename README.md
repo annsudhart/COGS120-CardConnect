@@ -7,8 +7,7 @@ SVG Icons are from [Heroicons UI](https://github.com/sschoger/heroicons-ui)
 
 
 ## Prototype
-Here's our prototype on Figma:
-https://www.figma.com/proto/dDdCbc2bZ3C4Nvqc2IK0pGgj/CardConnect-v1.0?node-id=0%3A1&scaling=scale-down
+See our [prototype](https://www.figma.com/proto/dDdCbc2bZ3C4Nvqc2IK0pGgj/CardConnect-v1.0?node-id=0%3A1&scaling=scale-down) on Figma.
 
 
 ## Installation
