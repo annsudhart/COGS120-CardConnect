@@ -1,0 +1,24 @@
+{
+  "name": "cogs120-cardconnect",
+  "version": "1.0.0",
+  "description": "Project for COGS120, Presenting Information studio",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^3.21.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/annsudhart/COGS120-CardConnect.git"
+  },
+  "author": "Andrea Sudharta, Cora Xing, Qi Goh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/annsudhart/COGS120-CardConnect/issues"
+  },
+  "homepage": "https://github.com/annsudhart/COGS120-CardConnect#readme"
+}
