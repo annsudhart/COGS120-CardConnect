@@ -12,7 +12,10 @@ git clone https://github.com/annsudhart/COGS120-CardConnect && cd COGS120-CardCo
 
 Then do:
 ``
+npm install
+``
+## Running
+``
 npm start
 ``
-
 
