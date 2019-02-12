@@ -21,17 +21,16 @@
       <div class="topbar-item" id="icon-plus"><a href="newcontact.html"><img src="images/icon-plus.svg"/></a></div>
     </div>
     <div id="searchbar">
-      <input type="text" id="search" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
-    </div>
-    <div class="dropdown">
-      <button onclick="myFunction()" class="searchbar-content dropbtn">Dropdown</button>
-      <div id="myDropdown" class="searchbar-content">
-        <a href="#letter-a">A</a>
-        <a href="#letter-b">B</a>
-        <a href="#letter-c">C</a>
-        <a href="#letter-d">D</a>
+      <input type="text" class="searchbar-item" id="search" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+      <div class="searchbar-item dropdown show">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filter</a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
       </div>
-    </div>
+	</div>
     <div id="contact-info">
       <div class="letter-cluster" id="letter-a">
         <div class="letter">A</div>
