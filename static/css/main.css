@@ -27,13 +27,13 @@ ul {
 .phone-screen {
   position: relative;
   margin: 0 auto;
-  width: 375px;
   background: #FFFFFF;
+  width: 100%;
 }
 
 #topbar {
   display: flex;
-  width: 375px;
+  width: 100%;
   left: 0px;
   top: 0px;
 }
@@ -62,7 +62,6 @@ ul {
 }
 
 #searchbar {
-  width: 375px;
   height: 75px;
   left: 0px;
   top: 106px;
