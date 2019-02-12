@@ -3,6 +3,10 @@ a {
   text-decoration: none;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   text-align: center;
   margin: 0px;
@@ -21,18 +25,10 @@ ul {
 }
 
 .phone-screen {
-  /* iPhone 8.1 */
-
   position: relative;
-  margin: 50px auto;
+  margin: 0 auto;
   width: 375px;
-  height: 667px;
   background: #FFFFFF;
-
-  border-style: solid;
-  border-width: 1px;
-  border-color: black;
-  /* border-radius: 50px; */
 }
 
 #topbar {
@@ -40,8 +36,6 @@ ul {
   width: 375px;
   left: 0px;
   top: 0px;
-
-  border: 1px solid #B4B4B4;
 }
 
 .topbar-item {
@@ -53,16 +47,17 @@ ul {
 }
 
 #header-text {
-  width: 75%;
+  width: 100%;
   left: 126px;
   top: 30px;
   font-weight: bold;
   font-size: 30px;
-
   color: #000000;
 }
 
 #icon-plus {
+  position: absolute;
+  right: 0;
   width: 25%;
 }
 
@@ -72,28 +67,30 @@ ul {
   left: 0px;
   top: 106px;
   background: #E5E5E5;
+  padding: 0px 15px;
 }
 
 #search {
-  width: 350px;
+  width: 75%;
   height: 40px;
-  left: 12px;
+  float: left;
   top: 124px;
   margin-top: 15px;
   padding-left: 10px;
   font-size: 18px;
-  color: #B4B4B4;
-
-
   background: #FFFFFF;
-  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
 }
 
-#contact-info {
+.searchbar-item {
+  height: 40px;
+  display: inline-flex;
+}
 
+#contact-info {
+  padding-top: 20px;
 }
 
 .dropdown {
-  margin-top: 20px;
+  margin-top: 15px;
 }
