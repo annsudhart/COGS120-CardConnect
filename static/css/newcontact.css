@@ -52,8 +52,8 @@ body {
 .input-fields input {
 	display: block;
 	border: none;
-	border-bottom: 1px solid #000000;	
-}				
+	border-bottom: 1px solid #000000;
+}
 
 .input-fields {
 	width: 70%;
@@ -75,4 +75,9 @@ body {
 
 .placeholder img {
 	float: left;
+}
+
+#cam-button {
+  width: 90px;
+  margin-top: -15px;
 }
