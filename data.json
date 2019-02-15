@@ -1,8 +1,8 @@
 {
-   "name": "Timmy Triton",
-   "phone": "+1 (123)-456-789",
-   "email": "timmy@ucsd.edu",
-   "address": "9500 Gilman Drive, La Jolla CA 92092",
-   "company": "UCSD Sustainability Director",
-   "website": "sustainability.ucsd.edu"
+	"name": "Timmy Triton",
+	"phone": "+1 (123)-456-789",
+	"email": "timmy@ucsd.edu",
+	"address": "9500 Gilman Drive, La Jolla CA 92092",
+	"company": "UCSD Sustainability Director",
+	"website": "sustainability.ucsd.edu"
 }

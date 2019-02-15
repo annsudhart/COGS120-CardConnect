@@ -38,6 +38,7 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', index.view);
+app.get('/index', index.view);
 app.get('/newcontact', newcontact.view);
 app.get('/existingcontact', existingcontact.view);
 app.get('/contactlist', contactlist.view);

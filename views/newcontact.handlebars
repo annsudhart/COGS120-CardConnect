@@ -1,13 +1,14 @@
 <html>
-	<body>
+	<head>
 		<title> Card Connect </title>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<link rel="stylesheet" type="text/css" href="css/newcontact.css">
-	</body>
-	<head>
+		<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+	</head>
+	<body>
 		<div class="top-bar">
 			<p >Editing Mode</p>
 			<a class="back-button" href="contactlist">Back</a>
@@ -47,5 +48,17 @@
 				<input class="done-button" type="submit" value="Done" action="">
 			</div>
 		</form>
-	</head>
+		
+		<script>
+			$(document).ready(function() {
+				initializePage();
+			})
+
+			function initializePage() {
+				$('.done-button').click(function() {
+					alert("Saved!");
+				});
+			}
+		</script>
+	</body>
 </html>
