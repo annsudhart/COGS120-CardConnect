@@ -17,6 +17,7 @@ var index = require('./routes/index');
 
 var app = express();
 
+
 // all environments
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
@@ -38,6 +39,7 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', index.view);
+app.get('/index', index.view);
 app.get('/newcontact', newcontact.view);
 app.get('/existingcontact', existingcontact.view);
 app.get('/contactlist', contactlist.view);
