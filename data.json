@@ -14,7 +14,6 @@
 		},
 	"Anthony Rodriguez":
 		{
-<<<<<<< HEAD
 			"id" : 2,
 			"firstName": "Anthony",
 			"lastName": "Rodriguez",
@@ -25,10 +24,6 @@
 			"company": "Zapp, LLC",
 			"website": "zapp.llc",
 			"image": "anthony-rodriguez.svg"
-=======
-			"name": "Anthony Rodriguez",
-			"id": "3"
->>>>>>> f92fec4c710bffcd889b885913040decd0d69cab
 		},
 	"Ashley Cantu":
 		{
