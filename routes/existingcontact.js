@@ -1,9 +1,8 @@
-var data = require('../contactdata.json');
+var data = require('../data.json');
 
 exports.viewContact = function(request, response){
-	var id = request.params.id;
-	console.log(data.id);	
+	var name = request.params.name;
 	response.render('existingcontact', {		
-		"data": data[id]
+		"data": data[name]
 	});
 };

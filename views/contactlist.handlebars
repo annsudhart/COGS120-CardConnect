@@ -32,9 +32,9 @@
         </div>
       </div>
 	</div>
-	{{#each data.contacts}}
-		<div class="contact-list" id="{{id}}">
-			<a href="existingcontact/contact{{id}}">{{name}}</a>
+	{{#each data}}
+		<div class="contact-list" id="{{fullName}}">
+			<a href="existingcontact/{{fullName}}">{{fullName}}</a>
 		</div>
 	{{/each}}
   </div>
