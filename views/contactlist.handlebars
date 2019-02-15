@@ -32,39 +32,11 @@
         </div>
       </div>
 	</div>
-    <div id="contact-info">
-      <div class="letter-cluster" id="letter-a">
-        <div class="letter">A</div>
-        <ul class="letter-names">
-          <li><a href="existingcontact">Anthony Rodriguez</a></li>
-          <li><a href="existingcontact">Andrea Sudharta</a></li>
-          <li><a href="existingcontact">Ashley Cantu</a></li>
-        </ul>
-      </div>
-      <div class="letter-cluster" id="letter-b">
-        <div class="letter">B</div>
-        <ul class="letter-names">
-          <li><a href="existingcontact">Ben Sampson</a></li>
-          <li><a href="existingcontact">Brandon Bird</a></li>
-          <li><a href="existingcontact">Brian Moon</a></li>
-        </ul>
-      </div>
-      <div class="letter-cluster" id="letter-c">
-        <div class="letter">C</div>
-        <ul class="letter-names">
-          <li><a href="existingcontact">Camella Lehmann</a></li>
-          <li><a href="existingcontact">Chance Braun</a></li>
-          <li><a href="existingcontact">Christian Cuevas</a></li>
-        </ul>
-      </div>
-      <div class="letter-cluster" id="letter-d">
-        <div class="letter">D</div>
-        <ul class="letter-names">
-          <li><a href="existingcontact">Daniel Schuyler</a></li>
-          <li><a href="existingcontact">Dorothy Emanuel</a></li>
-        </ul>
-      </div>
-    </div>
+	{{#each data.contacts}}
+		<div id="{{id}}">
+			<a href="existingcontact/contact{{id}}">{{name}}</a>
+		</div>
+	{{/each}}
   </div>
 </body>
 </html>

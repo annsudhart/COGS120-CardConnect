@@ -41,7 +41,7 @@ if ('development' == app.get('env')) {
 app.get('/', index.view);
 app.get('/index', index.view);
 app.get('/newcontact', newcontact.view);
-app.get('/existingcontact', existingcontact.view);
+app.get('/existingcontact/:id', existingcontact.viewContact);
 app.get('/contactlist', contactlist.view);
 // Example route
 // app.get('/users', user.list);

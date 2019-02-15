@@ -1,9 +1,9 @@
-// Get all of our friend data
-var data = require('../data.json');
+var data = require('../contactdata.json');
 
-exports.view = function(request, response){
-	console.log(data);
+exports.viewContact = function(request, response){
+	var id = request.params.id;
+	console.log(data.id);	
 	response.render('existingcontact', {		
-		"data": data
+		"data": data[id]
 	});
 };

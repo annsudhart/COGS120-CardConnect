@@ -1,8 +1,48 @@
 {
-	"name": "Timmy Triton",
-	"phone": "+1 (123)-456-789",
-	"email": "timmy@ucsd.edu",
-	"address": "9500 Gilman Drive, La Jolla CA 92092",
-	"company": "UCSD Sustainability Director",
-	"website": "sustainability.ucsd.edu"
+	"contacts": [
+		{
+			"name": "Andrea Sudharta",
+			"id": "2"
+		},
+		{
+			"name": "Anthony Rodrigues",
+			"id": "3"
+		},
+		{
+			"name": "Ashley Cantu",
+			"id": "4"
+		},
+		{
+			"name": "Ben Sampson",
+			"id": "5"
+		},
+		{
+			"name": "Brandon Bird",
+			"id": "6"
+		},
+		{
+			"name": "Brian Moon",
+			"id": "7"
+		},
+		{
+			"name": "Camella Lehmann",
+			"id": "8"
+		},
+		{
+			"name": "Chance Braun",
+			"id": "9"
+		},
+		{
+			"name": "Christian Cuevas",
+			"id": "10"
+		},
+		{
+			"name": "Daniel Schuyler",
+			"id": "11"
+		},
+		{
+			"name": "Dorothy Emanuel",
+			"id": "12"
+		}
+	]
 }
