@@ -1,0 +1,68 @@
+body {
+	border: 2px solid #000000;
+	padding: 5px;
+}
+
+.top-bar {
+	text-align: center;
+}
+
+.new-contact {
+	clear: both;
+}
+
+.header {
+	padding: 5vh 0 5vh 0;
+	background: linear-gradient(180deg, #bfbfbf 50%, white 50%);
+}
+
+.header img {
+	width: 50%;
+	max-width: 300px;
+	display: block;
+	margin: 0 auto;
+}
+
+.header h3 {
+	text-align: center;
+}
+
+.header input {
+	display: block;
+	border: none;
+	border-bottom: 1px solid #000000;
+	margin: 0 auto;
+}
+
+.body {
+	text-align: center;
+}
+
+.body img {
+	float: left;
+}
+
+.field {
+	border: none;
+	border-bottom: 1px solid #000000;
+	margin-left: 7px;
+	width: 250px;
+}					
+
+.input-field {
+	clear: both;
+	margin: 2vh 0;
+	display: inline-block;
+}
+
+.done-button {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+
+.back-button {
+	position: absolute;
+	top: 15px;
+	left: 15px;	
+}

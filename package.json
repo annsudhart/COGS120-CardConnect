@@ -1,24 +1,25 @@
 {
-  "name": "cogs120-cardconnect",
-  "version": "1.0.0",
-  "description": "Project for COGS120, Presenting Information studio",
-  "main": "server.js",
-  "dependencies": {
-    "express": "^3.21.2"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
+  "name": "IntroHCI",
+  "version": "0.0.1",
+  "author": "Intro HCI Staff",
+
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/annsudhart/COGS120-CardConnect.git"
+    "url": "https://github.com/IntroHCI/lab4"
   },
-  "author": "Andrea Sudharta, Cora Xing, Qi Goh",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/annsudhart/COGS120-CardConnect/issues"
+  "license": "MIT",
+
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
   },
-  "homepage": "https://github.com/annsudhart/COGS120-CardConnect#readme"
+  "dependencies": {
+    "express": "3.x",
+    "express3-handlebars": "*",
+    "mongodb": "*",
+    "mongoose": "*"
+  },
+  "engines": {
+    "node": "8.9.x"
+  }  
 }
