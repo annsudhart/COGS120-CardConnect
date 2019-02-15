@@ -1,0 +1,26 @@
+button {
+    border-radius: 15px;
+    width: 90px;
+    height: 40px;
+    font-size: 20px;
+}
+
+h1 {
+    padding-top: 100px;
+    padding-bottom: 10px;
+}
+
+.title {
+    padding: 30px;
+}
+
+.field {
+    padding: 20px;
+}
+
+.line {
+    border: 3px solid black;
+    height: 1px;
+    width: 200px;
+    margin: 40px auto;
+}
