@@ -17,9 +17,9 @@
 <body>
   <div class="phone-screen">
     <div id="topbar">
-      <div class="topbar-item" id="log-out"><a href="index">Log out</a></div>
-      <div class="topbar-item" id="header-text"> Contacts </div>
-      <div class="topbar-item" id="icon-plus"><a href="newcontact"><img src="images/icon-plus.svg"/></a></div>
+      <a href="index" class="logout-button">Log out</a>
+      <h3>Contacts</h3>
+      <a href="newcontact" class="plus-button"><img src="images/icon-plus.svg"></a>
     </div>
     <div id="searchbar">
       <input type="text" class="searchbar-item" id="search" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
@@ -33,7 +33,7 @@
       </div>
 	</div>
 	{{#each data.contacts}}
-		<div id="{{id}}">
+		<div class="contact-list" id="{{id}}">
 			<a href="existingcontact/contact{{id}}">{{name}}</a>
 		</div>
 	{{/each}}
