@@ -23,6 +23,7 @@ body {
 	max-width: 300px;
 	display: block;
 	margin: 0 auto;
+	padding-bottom: 40px;
 }
 
 .header h3 {
