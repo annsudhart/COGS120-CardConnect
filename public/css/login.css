@@ -10,14 +10,13 @@ h1 {
     padding-bottom: 10px;
 }
 
-.title {
-    padding: 30px;
-}
-
 .field {
     padding: 20px;
 }
 
+#login {
+    margin: 20px;
+}
 .line {
     border: 3px solid black;
     height: 1px;
