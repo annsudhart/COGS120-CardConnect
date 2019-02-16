@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link rel="stylesheet" type="text/css" href="css/newcontact.css">
+		<link rel="stylesheet" type="text/css" href="/css/newcontact.css">
 		<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 	</head>
 	<body>
@@ -13,52 +13,40 @@
 			<h3>Editing Mode</h3>
 			<a class="back-button" href="contactlist">Back</a>
 		</div>
-		<form class="new-contact" action="contactlist">
+		<form class="new-contact" role="form" method="post" action="/newcontact/add">
 			<div class="header">
 				<img src="images/placeholder.svg">
-				<input type="text" placeholder="Name">
+				<input type="text" name="name" placeholder="Name">
 			</div>
 			
 			<div class="body">
 				<div class="input-field">
 					<img src="images/icon-call.svg">
-					<input type="text" class="field" placeholder="Phone">
+					<input type="text" class="field" name="phone" placeholder="Phone">
 				</div><br>
 			
 				<div class="input-field">
 					<img src="images/icon-company.svg">
-					<input type="text" class="field" placeholder="Company">
+					<input type="text" class="field" name="company" placeholder="Company">
 				</div><br>
 				
 				<div class="input-field">
 					<img src="images/icon-globe.svg">
-					<input type="text" class="field" placeholder="Website">
+					<input type="text" class="field" name="website" placeholder="Website">
 				</div><br>
 			
 				<div class="input-field">
 					<img src="images/icon-mail.svg">
-					<input type="text" class="field" placeholder="Email">
+					<input type="text" class="field" name="email" placeholder="Email">
 				</div><br>
 			
 				<div class="input-field">
 					<img src="images/icon-home.svg">
-					<input type="text" class="field" placeholder="Address">
+					<input type="text" class="field" name="address" placeholder="Address">
 				</div><br>
 				
 				<input class="done-button" type="submit" value="Done" action="">
 			</div>
 		</form>
-		
-		<script>
-			$(document).ready(function() {
-				initializePage();
-			})
-
-			function initializePage() {
-				$('.done-button').click(function() {
-					alert("Saved!");
-				});
-			}
-		</script>
 	</body>
 </html>
