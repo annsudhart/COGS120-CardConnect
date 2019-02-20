@@ -11,6 +11,7 @@ var handlebars = require('express3-handlebars')
 var contactlist = require('./routes/contactlist');
 var newcontact = require('./routes/newcontact');
 var existingcontact = require('./routes/existingcontact');
+var editcontact = require('./routes/editcontact');
 var index = require('./routes/index');
 // Example route
 // var user = require('./routes/user');
@@ -39,11 +40,12 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', index.view);
-app.get('/index', index.view);
+app.get('/contactlist', contactlist.view);
 app.get('/newcontact', newcontact.view);
 app.post('/newcontact/add', newcontact.addContact);
 app.get('/existingcontact/:name', existingcontact.viewContact);
-app.get('/contactlist', contactlist.view);
+app.get('/editcontact/:name', editcontact.editContact);
+app.post('/editcontact/:name/save', editcontact.saveContact);
 // Example route
 // app.get('/users', user.list);
 

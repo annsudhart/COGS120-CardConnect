@@ -24,7 +24,7 @@ exports.addContact = function(request, response){
 			output = data.contact[k];
 		}
 	}
-	console.log(output);
+	
 	response.render('existingcontact', {
 		"data": output
 	});
