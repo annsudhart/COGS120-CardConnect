@@ -11,41 +11,41 @@
 	</head>
 	<body>
 		<div class="top-bar">		
-			<h3 style="text-align: center;">View Card</h3>
-			<a href="/contactlist" class="back-button">Back</a>
-			<a href="/editcontact/{{data.fullName}}" class="edit-button">Edit</a>
+			<h3 style="text-align: center;">Edit Card</h3>
+			<a href="javascript:history.back()" class="cancel-button">Cancel</a>
 		</div>
-		<form class="new-contact" action="">
-			<div class="header">
-				<img src="/images/{{data.image}}">
-				<h3 class="full-name">{{data.fullName}}</h3>
-			</div>
-			
+		<div class="header">
+			<img src="/images/{{data.image}}">
+			<h3 class="full-name">{{data.fullName}}</h3>
+		</div>
+		<form class="new-contact" role="form" method="post" action="/editcontact/{{data.fullName}}/save">
 			<div class="body">
 				<div class="input-field">
 					<img src="/images/icon-call.svg">
-					<input type="text" class="view" value="{{data.phone}}" readonly>
+					<input type="text" class="edit" name="phone" value="{{data.phone}}">
 				</div><br>
 			
 				<div class="input-field">
 					<img src="/images/icon-company.svg">
-					<input type="text" class="view" value="{{data.company}}" readonly>
+					<input type="text" class="edit" name="company" value="{{data.company}}">
 				</div><br>
 				
 				<div class="input-field">
 					<img src="/images/icon-globe.svg">
-					<input type="text" class="view" value="{{data.website}}" readonly>
+					<input type="text" class="edit" name="website" value="{{data.website}}">
 				</div><br>
 			
 				<div class="input-field">
 					<img src="/images/icon-mail.svg">
-					<input type="text" class="view" value="{{data.email}}" readonly>
+					<input type="text" class="edit" name="email" value="{{data.email}}">
 				</div><br>
 			
 				<div class="input-field">
 					<img src="/images/icon-home.svg">
-					<input type="text" class="view" value="{{data.address}}" readonly>
+					<input type="text" class="edit" name="address" value="{{data.address}}">
 				</div><br>
+				
+				<input class="done-button" type="submit" value="Done">
 			</div>
 		</form>
 	</body>

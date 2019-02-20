@@ -1,3 +1,7 @@
-exports.view = function(req, res){
-  res.render('contactlist');
+var data = require('../data.json');
+
+exports.view = function(request, response){
+	response.render('contactlist', {		
+		"data": data
+	});
 };

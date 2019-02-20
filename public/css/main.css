@@ -3,13 +3,9 @@ a {
   text-decoration: none;
 }
 
-html, body {
-  height: 100%;
-}
-
 body {
   text-align: center;
-  margin: 0px;
+  margin: 0	px;
   font-family: Roboto;
   font-style: normal;
   line-height: normal;
@@ -19,9 +15,8 @@ div {
   margin: 0px;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0px;
+.contact-list {
+  padding: 5px 0;
 }
 
 .phone-screen {
@@ -31,32 +26,16 @@ ul {
   width: 100%;
 }
 
-#topbar {
-  display: flex;
-  width: 100%;
-  left: 0px;
-  top: 0px;
+.logout-button {
+	position: absolute;
+	top: 15px;
+	left: 15px;
 }
 
-.topbar-item {
-  display: inline-block;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#log-out {
-  padding-left: 30px;
-}
-
-#header-text {
-  width: 55%;
-  left: 126px;
-  top: 30px;
-  font-weight: bold;
-  font-size: 30px;
-  color: #000000;
+.plus-button {
+	position: absolute;
+	top: 15px;
+	right: 15px;
 }
 
 #icon-plus {
@@ -66,20 +45,13 @@ ul {
 }
 
 #searchbar {
-  height: 75px;
-  left: 0px;
-  top: 106px;
   background: #E5E5E5;
-  padding: 0px 15px;
+  margin-bottom: 20px;
 }
 
 #search {
   width: 75%;
   height: 40px;
-  float: left;
-  top: 124px;
-  margin-top: 15px;
-  padding-left: 10px;
   font-size: 18px;
   background: #FFFFFF;
   border-radius: 10px;
@@ -88,12 +60,6 @@ ul {
 .searchbar-item {
   height: 40px;
   display: inline-flex;
-}
-
-#contact-info {
-  padding-top: 20px;
-}
-
-.dropdown {
-  margin-top: 15px;
+  padding: 0 10px;
+  margin: 15px 0;
 }

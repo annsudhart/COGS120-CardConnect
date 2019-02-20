@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
         integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
   <script src="https://code.jquery.com/jquery-3.1.0.js"
         integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
@@ -17,9 +17,9 @@
 <body>
   <div class="phone-screen">
     <div id="topbar">
-      <div class="topbar-item" id="log-out"><a href="index">Log out</a></div>
-      <div class="topbar-item" id="header-text"> Contacts </div>
-      <div class="topbar-item" id="icon-plus"><a href="newcontact"><img src="images/icon-plus.svg"/></a></div>
+      <a href="index" class="logout-button">Log out</a>
+      <h3>Contacts</h3>
+      <a href="newcontact" class="plus-button"><img src="images/icon-plus.svg"></a>
     </div>
     <div id="searchbar">
       <input type="text" class="searchbar-item" id="search" onkeyup="getName()" placeholder="Search Contact.." title="Type in a category">
@@ -32,39 +32,11 @@
         </div>
       </div>
 	</div>
-    <div id="contact-info">
-      <div class="letter-cluster" id="letter-a">
-        <div class="letter">A</div>
-        <ul class="letter-names">
-          <li><a href="existingcontact">Anthony Rodriguez</a></li>
-          <li><a href="existingcontact">Andrea Sudharta</a></li>
-          <li><a href="existingcontact">Ashley Cantu</a></li>
-        </ul>
-      </div>
-      <div class="letter-cluster" id="letter-b">
-        <div class="letter">B</div>
-        <ul class="letter-names">
-          <li><a href="existingcontact">Ben Sampson</a></li>
-          <li><a href="existingcontact">Brandon Bird</a></li>
-          <li><a href="existingcontact">Brian Moon</a></li>
-        </ul>
-      </div>
-      <div class="letter-cluster" id="letter-c">
-        <div class="letter">C</div>
-        <ul class="letter-names">
-          <li><a href="existingcontact">Camella Lehmann</a></li>
-          <li><a href="existingcontact">Chance Braun</a></li>
-          <li><a href="existingcontact">Christian Cuevas</a></li>
-        </ul>
-      </div>
-      <div class="letter-cluster" id="letter-d">
-        <div class="letter">D</div>
-        <ul class="letter-names">
-          <li><a href="existingcontact">Daniel Schuyler</a></li>
-          <li><a href="existingcontact">Dorothy Emanuel</a></li>
-        </ul>
-      </div>
-    </div>
+	{{#each data.contact}}
+		<div class="contact-list" id="{{fullName}}">
+			<a href="existingcontact/{{fullName}}">{{fullName}}</a>
+		</div>
+	{{/each}}
   </div>
   <script>
     function getName() {
