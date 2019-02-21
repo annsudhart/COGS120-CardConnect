@@ -22,7 +22,7 @@
       <a href="newcontact" class="plus-button"><img src="images/icon-plus.svg"></a>
     </div>
     <div id="searchbar">
-      <input type="text" class="searchbar-item" id="search" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+      <input type="text" class="searchbar-item" id="search" onkeyup="getName()" placeholder="Search Contact.." title="Type in a category">
       <div class="searchbar-item dropdown show">
         <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filter</a>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -38,5 +38,12 @@
 		</div>
 	{{/each}}
   </div>
+  <script>
+    function getName() {
+      var keyName = $('#search').val();
+      var firstLetter = keyName[0];
+
+    }
+  </script>
 </body>
 </html>

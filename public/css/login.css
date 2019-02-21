@@ -23,3 +23,8 @@ h1 {
     width: 200px;
     margin: 40px auto;
 }
+
+input {
+  border: 1px solid #ccc;
+  padding: 5px;
+}
