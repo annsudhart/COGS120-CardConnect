@@ -15,6 +15,7 @@ exports.editContact = function(request, response) {
 	});
 };
 
+/*
 exports.saveContact = function(request, response) {
 	var name = request.params.name;
 	var k;
@@ -33,4 +34,5 @@ exports.saveContact = function(request, response) {
 	response.render('existingcontact', {
 		"data": output
 	});
-}
+};
+*/

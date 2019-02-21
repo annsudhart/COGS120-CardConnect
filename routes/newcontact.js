@@ -4,6 +4,7 @@ exports.view = function(request, response){
 	response.render('newcontact');
 };
 
+/*
 exports.addContact = function(request, response){
 	var name = request.body.name;
 	var newContact = {
@@ -28,4 +29,5 @@ exports.addContact = function(request, response){
 	response.render('existingcontact', {
 		"data": output
 	});
-}
+};
+*/

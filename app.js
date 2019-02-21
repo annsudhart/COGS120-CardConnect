@@ -42,10 +42,12 @@ if ('development' == app.get('env')) {
 app.get('/', index.view);
 app.get('/contactlist', contactlist.view);
 app.get('/newcontact', newcontact.view);
-app.post('/newcontact/add', newcontact.addContact);
+//app.post('/newcontact/add', newcontact.addContact);
 app.get('/existingcontact/:name', existingcontact.viewContact);
 app.get('/editcontact/:name', editcontact.editContact);
-app.post('/editcontact/:name/save', editcontact.saveContact);
+//app.post('/editcontact/:name/save', editcontact.saveContact);
+app.post('/existingcontact/:name', existingcontact.saveContact);
+app.post('/contactlist', contactlist.addContact);
 // Example route
 // app.get('/users', user.list);
 
