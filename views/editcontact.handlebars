@@ -6,8 +6,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<link rel="stylesheet" href="/css/newcontact.css">
-
 		<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('#change-pic').submit(function(){
+					console.log('i was clicked');
+					$('.header img').attr('src', '/images/placeholder.png');
+				});
+			});
+		</script>
 	</head>
 	<body>
 		<div class="top-bar">
@@ -22,6 +29,10 @@
 				</div>
 				<input type="text" class="full-name" name="name" value="{{data.fullName}}">
 			</div>
+			<form id="change-pic" action="/editcontact/{{data.image}}" method="post" enctype="multipart/form-data">
+				<input type="file" accept="image/*" capture>
+				<input type="submit" value="Upload">
+			</form>
 			<div class="body">
 				<div class="input-field">
 					<img src="/images/icon-call.svg">
