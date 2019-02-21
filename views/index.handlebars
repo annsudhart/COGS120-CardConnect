@@ -30,6 +30,16 @@
 				<input type="password" class="username" width="100%">
 			</div>
 			<a href="contactlist"><button id="login">Login</button></a>
+			<p>or</p>
+			
+			<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+				</fb:login-button>
+
 		</div>
+
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
+		{{> facebook}}
+		<script src="/js/facebook.js"></script>
 	</body>
 </html>
