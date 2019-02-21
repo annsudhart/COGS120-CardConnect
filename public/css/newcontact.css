@@ -47,12 +47,12 @@ body {
 	border-bottom: 1px solid #000000;
 	margin-left: 7px;
 	width: 250px;
-}			
+}
 
 .edit {
 	margin-left: 7px;
 	width: 250px;
-}	
+}
 
 .input-field {
 	clear: both;
@@ -69,5 +69,27 @@ body {
 .back-button, .cancel-button {
 	position: absolute;
 	top: 15px;
-	left: 15px;	
+	left: 15px;
+}
+
+.prof-pic {
+	height: fit-content;
+	margin: 0 auto;
+}
+
+#icon-container {
+	width:180px;
+	height:30px;
+	margin:0 auto;
+	display:block;
+}
+
+#edit-prof-pic {
+    height: 30px;
+    width: 30px;
+    padding-right: 0px;
+    right:0;
+    position: inherit;
+    margin-right: 15px;
+		margin-top:-15px;
 }
