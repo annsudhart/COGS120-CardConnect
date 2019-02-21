@@ -15,7 +15,7 @@ exports.addContact = function(request, response){
 			"address": request.body.address,
 			"company": request.body.company,
 			"website": request.body.website,
-			"image": "placeholder.png"
+			"image": "placeholder.svg"
 		}
 	data.contact.push(newContact);
 	
