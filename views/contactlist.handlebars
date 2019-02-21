@@ -22,7 +22,7 @@
       <a href="newcontact" class="plus-button"><img src="images/icon-plus.svg"></a>
     </div>
     <div id="searchbar">
-      <input type="text" class="searchbar-item" id="search" onkeyup="getName()" placeholder="Search Contact.." title="Type in a category">
+      <input type="text" class="searchbar-item" id="search" placeholder="Search Contact.." title="Type in a category">
       <div class="searchbar-item dropdown show">
         <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filter</a>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -39,11 +39,18 @@
 	{{/each}}
   </div>
   <script>
-    function getName() {
-      var keyName = $('#search').val();
-      var firstLetter = keyName[0];
 
-    }
+  console.log("script running");
+  $(document).ready(function(){
+    console.log("hi");
+    $('.searchbar-item').on('keyup', function() {
+      var query = $(this).val().toLowerCase();
+      $(".contact-list").filter(function() {
+        var value = $(this)[0].id.toLowerCase();
+        $(this).toggle($(this)[0].id.toLowerCase().indexOf(query) > -1)
+      });
+    });
+  });
   </script>
 </body>
 </html>
