@@ -48,6 +48,7 @@ app.get('/editcontact/:name', editcontact.editContact);
 //app.post('/editcontact/:name/save', editcontact.saveContact);
 app.post('/existingcontact/:name', existingcontact.saveContact);
 app.post('/contactlist', contactlist.addContact);
+app.get('/deletecontact/:name', contactlist.deleteContact);
 // Example route
 // app.get('/users', user.list);
 
