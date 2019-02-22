@@ -13,6 +13,8 @@ var newcontact = require('./routes/newcontact');
 var existingcontact = require('./routes/existingcontact');
 var editcontact = require('./routes/editcontact');
 var index = require('./routes/index');
+var newpic = require('./routes/newpicture')
+
 // Example route
 // var user = require('./routes/user');
 

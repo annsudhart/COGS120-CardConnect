@@ -17,21 +17,27 @@
 	<body>
 		<div class="phone-screen">
 			<div id="topbar">
-			<a href="/" class="logout-button">Log out</a>
-			<h3>Contacts</h3>
-			<a href="newcontact" class="plus-button"><img src="images/icon-plus.svg"></a>
-		</div>
+				<a href="/" class="logout-button">Log out</a>
+				<h3>Contacts</h3>
+				<a href="newcontact" class="plus-button"><img src="images/icon-plus.svg"></a>
+			</div>
 		<div id="searchbar">
 			<input type="text" class="searchbar-item" id="search" placeholder="Search Contact.." title="Type in a category">
+<!--			
 			<div class="searchbar-item dropdown show">
 				<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filter</a>
-				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-					<a class="dropdown-item" href="#">Action</a>
-					<a class="dropdown-item" href="#">Another action</a>
-					<a class="dropdown-item" href="#">Something else here</a>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="dropdown">
+					<option class="dropdown-item" value="A" href="#">A</option>
+					<option class="dropdown-item" value="B" href="#">B</option>
+					<option class="dropdown-item" value="C" href="#">C</option>
+					<a class="dropdown-item" value="D" href="#">D</a>
+					<a class="dropdown-item" value="E" href="#">E</a>
 				</div>
 			</div>
+-->
+
 		</div>
+		
 		<div id="contacts">
 			{{#each data.contact}}
 			<div class="contact-list" id="{{fullName}}">
@@ -49,6 +55,19 @@
 						$(this).toggle($(this)[0].id.toLowerCase().indexOf(query) > -1)
 					});
 				});
+/*
+				$('.dropdown-item').click( function() {
+					var dropdownOption = $(this).text();
+					console.log(dropdownOption);
+
+					$(".contact-list").filter(function() {
+						var value = $(this)[0].id.toLowerCase();
+						console.log($(this));
+						$(this).toggle($(this)[0].id.toLowerCase().indexOf(dropdownOption) > -1)
+					});
+				});
+				
+*/
 
 				$(".contact-list").sort(function (a, b) {
 					if ($(a).find("a").text() < $(b).find("a").text()) {

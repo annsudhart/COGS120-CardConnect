@@ -6,8 +6,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<link rel="stylesheet" href="/css/newcontact.css">
-
 		<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('#change-pic').submit(function(){
+					console.log('i was clicked');
+					$('.header img').attr('src', '/images/placeholder.png');
+				});
+			});
+		</script>
 	</head>
 	<body>
 		<div class="top-bar">
@@ -17,11 +24,9 @@
 		<form class="new-contact" role="form" method="post" action="/existingcontact/{{data.fullName}}">
 			<div class="header">
 				<img src="/images/{{data.image}}">
-				<div id="icon-container">
-					<img id="edit-prof-pic" src="/images/icon-edit.svg">
-				</div>
 				<input type="text" class="full-name" name="name" value="{{data.fullName}}">
 			</div>
+			<!-- <a href="../newpicture">Change contact picture</a> -->
 			<div class="body">
 				<div class="input-field">
 					<img src="/images/icon-call.svg">
