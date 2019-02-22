@@ -55,7 +55,7 @@
 
 				<input class="done-button" type="submit" value="Done">
 				
-				<a href="/deletecontact/{{data.fullName}}" class="delete-button">Delete</a>
+				<a href="/deletecontact/{{data.fullName}}" onclick="return confirm('Are you sure?')" class="delete-button">Delete</a>
 			</div>
 		</form>
 	</body>
