@@ -1,7 +1,7 @@
 var data = require('../data.json');
 
 exports.view = function(request, response) {
-	response.render('contactlist', {		
+	response.render('contactlist', {
 		"data": data
 	});
 };
@@ -18,7 +18,7 @@ exports.addContact = function(request, response) {
 			"image": "placeholder.svg"
 		}
 	data.contact.push(newContact);
-	
+
 	response.render('contactlist', {
 		"data": data
 	});
@@ -33,7 +33,7 @@ exports.deleteContact = function(request, response) {
 			data.contact.splice(k, 1);
 		}
 	}
-	
+
 	response.render('contactlist', {
 		"data": data
 	});
