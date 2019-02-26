@@ -16,13 +16,13 @@
 		<form class="new-contact" role="form" method="post" action="/contactlist"><!--/newcontact/add-->
 			<div class="header">
 				<img src="images/placeholder.svg">
-				<input type="text" name="name" placeholder="Name">
+				<input type="text" name="name" placeholder="Name*" required>
 			</div>
 			
 			<div class="body">
 				<div class="input-field">
 					<img src="images/icon-call.svg">
-					<input type="text" class="edit" name="phone" placeholder="Phone">
+					<input type="number" class="edit" name="phone" placeholder="Phone">
 				</div><br>
 			
 				<div class="input-field">
@@ -32,12 +32,12 @@
 				
 				<div class="input-field">
 					<img src="images/icon-globe.svg">
-					<input type="text" class="edit" name="website" placeholder="Website">
+					<input type="url" class="edit" name="website" placeholder="Website">
 				</div><br>
 			
 				<div class="input-field">
 					<img src="images/icon-mail.svg">
-					<input type="text" class="edit" name="email" placeholder="Email">
+					<input type="email" class="edit" name="email" placeholder="Email">
 				</div><br>
 			
 				<div class="input-field">
