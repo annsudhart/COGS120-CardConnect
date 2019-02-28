@@ -32,11 +32,11 @@
 						location.reload();
 					} else {
 						alert("passed validation");
-						window.location = "localhost:3000/contactlist";
+						window.location.pathname = "/contactlist";
 					}
 				}
 			</script>
-			<form name="login" onsubmit="validateLogin();" action="">
+			<form method="get" name="login" onsubmit="validateLogin();" action="/">
 				<div class="field">
 					<p>Username</p>
 					<input type="text" name="username" class="username" width="100%">
@@ -46,7 +46,7 @@
 					<input type="password" name="password" class="username" width="100%">
 				</div>
 
-				<input type="submit" id="login-button" value="Login" onclick="validateLogin();">
+				<input type="submit" id="login-button" value="Login">
 
 			</form>
 
