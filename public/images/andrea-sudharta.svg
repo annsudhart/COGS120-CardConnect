@@ -17,28 +17,28 @@
 	<rect class="st0" width="150.6" height="91.2"/>
 	<polygon class="st1" points="102.8,0 0,0 0,91.2 71.4,91.2 	"/>
 </g>
-<g id="Email">
-	<text transform="matrix(1 0 0 1 21.2027 71.162)" class="st0 st2 st3">asudharta@spark.co</text>
+<g>
+	<text id="Email" transform="matrix(1 0 0 1 21.2027 71.162)" class="st0 st2 st3">asudharta@spark.co</text>
 </g>
-<g id="Website">
-	<text transform="matrix(1 0 0 1 21.2029 76.1096)" class="st0 st2 st3">spark.co</text>
+<g>
+	<text id="Website" transform="matrix(1 0 0 1 21.2029 76.1096)" class="st0 st2 st3">spark.co</text>
 </g>
-<g id="Phone">
-	<text transform="matrix(1 0 0 1 21.2029 66.2406)" class="st0 st2 st3">(408)-123-4567</text>
+<g>
+	<text id="Phone" transform="matrix(1 0 0 1 21.2029 66.2406)" class="st0 st2 st3">(408)-123-4567</text>
 </g>
-<g id="Address-line-2">
-	<text transform="matrix(1 0 0 1 102.9405 68.252)" class="st4 st3">La Jolla, CA 92092</text>
+<g>
+	<text id="Address-line-1" transform="matrix(1 0 0 1 102.9405 68.252)" class="st4 st3">La Jolla, CA 92092</text>
 </g>
-<g id="Address-line-1">
-	<text transform="matrix(1 0 0 1 102.9407 62.9134)" class="st4 st3">1201 Lightning Trail</text>
+<g>
+	<text id="Address-line-2" transform="matrix(1 0 0 1 102.9407 62.9134)" class="st4 st3">1201 Lightning Trail</text>
 </g>
-<g id="Position">
-	<text transform="matrix(1 0 0 1 21.2029 52.3905)" class="st0 st4 st5">Software Developer</text>
+<g>
+	<text id="Position" transform="matrix(1 0 0 1 21.2029 52.3905)" class="st0 st4 st5">Software Developer</text>
 </g>
-<g id="Company">
-	<text transform="matrix(1 0 0 1 102.9407 53.8217)" class="st6 st7">Spark Co.</text>
+<g>
+	<text id="Company" transform="matrix(1 0 0 1 102.9407 53.8217)" class="st6 st7">Spark Co.</text>
 </g>
-<g id="Name">
-	<text transform="matrix(1 0 0 1 21.2027 29.2558)"><tspan x="0" y="0" class="st0 st6 st8">Andrea</tspan><tspan x="0" y="10.8" class="st0 st6 st8">Sudharta</tspan></text>
+<g>
+	<text id="Name" transform="matrix(1 0 0 1 21.2027 29.2558)"><tspan x="0" y="0" class="st0 st6 st8">Andrea</tspan><tspan x="0" y="10.8" class="st0 st6 st8">Sudharta</tspan></text>
 </g>
 </svg>

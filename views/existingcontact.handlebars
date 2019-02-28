@@ -15,11 +15,13 @@
 			<a href="/contactlist" class="back-button">Back</a>
 			<a href="/editcontact/{{data.fullName}}" class="edit-button">Edit</a>
 		</div>
-			<div class="header">
-				<!--<img src="/images/{{data.image}}" class="business-card">-->
-				<object data="/images/{{data.image}}" type="image/svg+xml" class="card">Your browser does not support SVG</object>
+			<div class="header-img">
+				<object id="display-card" data="/images/{{data.image}}" type="image/svg+xml" class="card">Your browser does not support SVG</object>
+			</div>
+			<div class="header-text">
 				<h3 class="full-name">{{data.fullName}}</h3>
 			</div>
+			
 			<div class="body">
 				<div class="input-field">
 					<img src="/images/icon-call.svg">
@@ -43,7 +45,8 @@
 
 				<div class="input-field">
 					<img src="/images/icon-home.svg">
-					<input type="text" class="view" value="{{data.address}}" readonly>
+					<input type="text" class="view" value="{{data.line1}}" readonly><br>
+					<input type="text" class="view" value="{{data.line2}}" readonly>
 				</div><br>
 			</div>
 		</form>

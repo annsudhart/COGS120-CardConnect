@@ -2,6 +2,7 @@ body {
 	font-family: Roboto;
 	font-style: normal;
 	line-height: normal;
+	margin: 0px;
 }
 
 .top-bar {
@@ -12,19 +13,23 @@ body {
 	clear: both;
 }
 
-.header {
-	padding-top: 5vh;
-	background: linear-gradient(180deg, #bfbfbf 50%, white 50%);
+.header-img {
+	padding: 3vh 0;
+	background: linear-gradient(180deg, #bfbfbf 60%, white 40%);
 }
 
-.header input {
-	display: block;
-	margin: 3vh auto;
+.header-text {
+	text-align: center;
+	margin-bottom: 3vh;
+}
+
+.header-text input {
+	display: inline-block;
+	margin: 2px 0;
 }
 
 .full-name {
-	text-align: center;
-	margin-bottom: 3vh;
+	margin-top: 0px;
 }
 
 .body {
@@ -48,7 +53,7 @@ body {
 	margin: 0 auto;
 }
 
-.edit {
+.new {
 	margin-left: 7px;
 	width: 250px;
 }
