@@ -14,7 +14,7 @@ var newcontactB = require('./routes/newcontactB');
 var existingcontact = require('./routes/existingcontact');
 var editcontact = require('./routes/editcontact');
 var index = require('./routes/index');
-var newpic = require('./routes/newpicture')
+var newpicture = require('./routes/newpicture')
 
 // Example route
 // var user = require('./routes/user');
@@ -46,6 +46,7 @@ app.get('/', index.view);
 app.get('/contactlist', contactlist.view);
 app.get('/newcontactA', newcontactA.viewA);
 app.get('/newcontactB', newcontactB.viewB);
+app.get('/newpicture', newpicture.view);
 //app.post('/newcontact/add', newcontact.addContact);
 app.get('/existingcontact/:name', existingcontact.viewContact);
 app.get('/editcontact/:name', editcontact.editContact);

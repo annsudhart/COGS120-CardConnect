@@ -14,15 +14,17 @@
 			<a class="back-button" href="contactlist">Back</a>
 		</div>
 		<form class="new-contact" role="form" method="post" action="/contactlist">
+			
 			<div class="header-img">
-				<object id="display-card" data="/images/template-1.svg" type="image/svg+xml" class="card">Your browser does not support SVG</object>
+				<a href="newpicture" class="svg">
+					<object id="display-card" data="/images/placeholder.svg" type="image/svg+xml" class="card">Your browser does not support SVG</object>
+				</a>
 			</div>
+		
 			<div class="header-text">
 				<input id="first" type="text" name="first" placeholder="First Name*" required><br>
 				<input id="last" type="text" name="last" placeholder="Last Name*" required>
 			</div>
-			<h3>New Image Upload</h3>
-			<input type="file" name="newImage" placeholder="New Picture"/>
 			
 			<div class="body">
 				<div class="input-field">
