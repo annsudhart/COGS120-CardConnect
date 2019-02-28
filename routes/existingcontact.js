@@ -30,6 +30,7 @@ exports.saveContact = function(request, response) {
 			data.contact[k].line2 = request.body.line2;
 			data.contact[k].company = request.body.company;
 			data.contact[k].website = request.body.website;
+			//template type
 			output = data.contact[k];
 		}
 	}	

@@ -23,38 +23,38 @@
 		</div>
 		<form class="new-contact" role="form" method="post" action="/existingcontact/{{data.fullName}}">
 			<div class="header-img">
-				<object id="display-card" data="/images/{{data.image}}" type="image/svg+xml" class="card">Your browser does not support SVG</object>
+				<object id="display-card" data="/images/template-{{data.template}}.svg" type="image/svg+xml" class="card">Your browser does not support SVG</object>
 			</div>
 			<div class="header-text">
-				<input type="text" name="first" value="{{data.first}}" required><br>
-				<input type="text" name="last" value="{{data.last}}" required>
+				<input id="first" type="text" name="first" value="{{data.first}}" required><br>
+				<input id="last" type="text" name="last" value="{{data.last}}" required>
 			</div>
 			
 			<div class="body">
 				<div class="input-field">
 					<img src="/images/icon-call.svg">
-					<input type="number" class="new" name="phone" value="{{data.phone}}">
+					<input id="phone" type="number" class="new" name="phone" value="{{data.phone}}">
 				</div><br>
 
 				<div class="input-field">
 					<img src="/images/icon-company.svg">
-					<input type="text" class="new" name="company" value="{{data.company}}">
+					<input id="company" type="text" class="new" name="company" value="{{data.company}}">
 				</div><br>
 
 				<div class="input-field">
 					<img src="/images/icon-globe.svg">
-					<input type="text" class="new" name="website" value="{{data.website}}">
+					<input id="website" type="text" class="new" name="website" value="{{data.website}}">
 				</div><br>
 
 				<div class="input-field">
 					<img src="/images/icon-mail.svg">
-					<input type="email" class="new" name="email" value="{{data.email}}">
+					<input id="email" type="email" class="new" name="email" value="{{data.email}}">
 				</div><br>
 
 				<div class="input-field">
 					<img src="/images/icon-home.svg">
-					<input type="text" class="new" name="line1" value="{{data.line1}}"><br>
-					<input type="text" class="new" name="line2" value="{{data.line2}}">
+					<input id="line1" type="text" class="new" name="line1" value="{{data.line1}}"><br>
+					<input id="line2" type="text" class="new" name="line2" value="{{data.line2}}">
 				</div><br>
 
 				<input class="done-button" type="submit" value="Done">
@@ -62,5 +62,45 @@
 				<a href="/deletecontact/{{data.fullName}}" onclick="return confirm('Are you sure?')" class="delete-button">Delete</a>
 			</div>
 		</form>
+		
+		<script>
+			window.onload=function() {
+				loadCard();
+				updateCard();
+			};
+			
+			function loadCard() {
+				var a = document.getElementById("display-card");
+				var svgDoc = a.contentDocument;
+				
+				var first = svgDoc.getElementById("first");
+				var last = svgDoc.getElementById("last");
+				var phone = svgDoc.getElementById("phone");
+				var email = svgDoc.getElementById("email");
+				var company = svgDoc.getElementById("company");
+				var line1 = svgDoc.getElementById("line1");
+				var line2 = svgDoc.getElementById("line2");
+				var website = svgDoc.getElementById("website");
+				
+				first.textContent = $("#first").val();
+				last.textContent = $("#last").val();
+				phone.textContent = $("#phone").val();
+				email.textContent = $("#email").val();
+				company.textContent = $("#company").val();
+				line1.textContent = $("#line1").val();
+				line2.textContent = $("#line2").val();
+				website.textContent = $("#website").val();
+			}
+			
+						
+			function updateCard() {
+				$("input").keyup(function() {
+					var a = document.getElementById("display-card");
+					var svgDoc = a.contentDocument;
+					var svgElement = svgDoc.getElementById(this.id);
+					svgElement.textContent = $(this).val();
+				});
+			}
+		</script>
 	</body>
 </html>

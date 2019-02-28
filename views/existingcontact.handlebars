@@ -16,39 +16,70 @@
 			<a href="/editcontact/{{data.fullName}}" class="edit-button">Edit</a>
 		</div>
 			<div class="header-img">
-				<object id="display-card" data="/images/{{data.image}}" type="image/svg+xml" class="card">Your browser does not support SVG</object>
+				<object id="display-card" data="/images/template-{{data.template}}.svg" type="image/svg+xml" class="card">Your browser does not support SVG</object>
 			</div>
 			<div class="header-text">
-				<h3 class="full-name">{{data.fullName}}</h3>
+				<h3 id="full" class="full-name">{{data.fullName}}</h3>
 			</div>
 			
 			<div class="body">
 				<div class="input-field">
 					<img src="/images/icon-call.svg">
-					<input type="text" class="view" value="{{data.phone}}" readonly>
+					<input id="phone" type="text" class="view" value="{{data.phone}}" readonly>
 				</div><br>
 
 				<div class="input-field">
 					<img src="/images/icon-company.svg">
-					<input type="text" class="view" value="{{data.company}}" readonly>
+					<input id="company" type="text" class="view" value="{{data.company}}" readonly>
 				</div><br>
 
 				<div class="input-field">
 					<img src="/images/icon-globe.svg">
-					<input type="text" class="view" value="{{data.website}}" readonly>
+					<input id="website" type="text" class="view" value="{{data.website}}" readonly>
 				</div><br>
 
 				<div class="input-field">
 					<img src="/images/icon-mail.svg">
-					<input type="text" class="view" value="{{data.email}}" readonly>
+					<input id="email" type="text" class="view" value="{{data.email}}" readonly>
 				</div><br>
 
 				<div class="input-field">
 					<img src="/images/icon-home.svg">
-					<input type="text" class="view" value="{{data.line1}}" readonly><br>
-					<input type="text" class="view" value="{{data.line2}}" readonly>
+					<input id="line1" type="text" class="view" value="{{data.line1}}" readonly><br>
+					<input id="line2" type="text" class="view" value="{{data.line2}}" readonly>
 				</div><br>
 			</div>
 		</form>
+		
+		<script>
+			window.onload=function() {
+				loadCard();
+			};
+			
+			function loadCard() {
+				var a = document.getElementById("display-card");
+				var svgDoc = a.contentDocument;
+				
+				var first = svgDoc.getElementById("first");
+				var last = svgDoc.getElementById("last");
+				var phone = svgDoc.getElementById("phone");
+				var email = svgDoc.getElementById("email");
+				var company = svgDoc.getElementById("company");
+				var line1 = svgDoc.getElementById("line1");
+				var line2 = svgDoc.getElementById("line2");
+				var website = svgDoc.getElementById("website");
+				
+				var full = $("#full").text();
+				var full = full.split(" ");
+				first.textContent = full[0];
+				last.textContent = full[1];
+				phone.textContent = $("#phone").val();
+				email.textContent = $("#email").val();
+				company.textContent = $("#company").val();
+				line1.textContent = $("#line1").val();
+				line2.textContent = $("#line2").val();
+				website.textContent = $("#website").val();
+			}
+		</script>
 	</body>
 </html>
