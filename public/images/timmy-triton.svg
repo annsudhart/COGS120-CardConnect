@@ -1,21 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1" id="Card" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 150.6 91.2" style="enable-background:new 0 0 150.6 91.2;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#EAEAEA;}
-	.st1{font-family:'Arial-BoldMT';}
-	.st2{font-size:9px;}
+	.st1{font-family:'Arial-ItalicMT';}
+	.st2{font-size:4px;}
 	.st3{font-family:'ArialMT';}
 	.st4{font-size:7px;}
-	.st5{font-family:'Arial-ItalicMT';}
-	.st6{font-size:4px;}
+	.st5{font-family:'Arial-BoldMT';}
+	.st6{font-size:9px;}
 </style>
-<g id="Layer_2">
+<g id="Background">
 	<rect class="st0" width="150.6" height="91.2"/>
 </g>
-<g id="Layer_1">
-	<text transform="matrix(1 0 0 1 23.1707 28.253)"><tspan x="0" y="0" class="st1 st2">Timmy Triton</tspan><tspan x="0" y="8.4" class="st3 st4">UCSD Sustainability</tspan></text>
-	<text transform="matrix(1 0 0 1 23.1707 52.1703)"><tspan x="0" y="0" class="st5 st6">(408)-123-4567</tspan><tspan x="0" y="4.8" class="st5 st6">timmy@ucsd.edu</tspan><tspan x="0" y="9.6" class="st5 st6">ucsd.edu</tspan><tspan x="0" y="19.2" class="st5 st6">9500 Gilman Drive</tspan><tspan x="0" y="24" class="st5 st6">La Jolla, CA 92092</tspan></text>
+<g id="Email">
+	<text transform="matrix(1 0 0 1 23.1707 56.9703)" class="st1 st2">timmy@ucsd.edu</text>
+</g>
+<g id="Website">
+	<text transform="matrix(1 0 0 1 23.1707 61.7703)" class="st1 st2">ucsd.edu</text>
+</g>
+<g id="Phone">
+	<text transform="matrix(1 0 0 1 23.1707 52.1703)" class="st1 st2">(408)-123-4567</text>
+</g>
+<g id="Address-Line-2">
+	<text transform="matrix(1 0 0 1 23.1707 76.1703)" class="st1 st2">La Jolla, CA 92092</text>
+</g>
+<g id="Address-Line-1">
+	<text transform="matrix(1 0 0 1 23.1707 71.3703)" class="st1 st2">9500 Gilman Drive</text>
+</g>
+<g id="Company">
+	<text transform="matrix(1 0 0 1 23.1707 36.653)" class="st3 st4">UCSD Sustainability</text>
+</g>
+<g id="Name">
+	<text transform="matrix(1 0 0 1 23.1707 28.253)" class="st5 st6">Timmy Triton</text>
 </g>
 </svg>
