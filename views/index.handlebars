@@ -32,11 +32,12 @@
 						location.reload();
 					} else {
 						alert("passed validation");
-						window.location.pathname = "/contactlist";
+						window.location.href = window.location.origin + "/contactlist";
 					}
+					return false;
 				}
 			</script>
-			<form method="get" name="login" onsubmit="validateLogin();" action="/">
+			<form name="login" action="/" onsubmit="return validateLogin();">
 				<div class="field">
 					<p>Username</p>
 					<input type="text" name="username" class="username" width="100%">
@@ -47,7 +48,6 @@
 				</div>
 
 				<input type="submit" id="login-button" value="Login">
-
 			</form>
 
 			<p>or</p>
