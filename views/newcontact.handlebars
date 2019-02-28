@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<title> Card Connect </title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" type="text/css" href="/css/newcontact.css">
+		<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+	</head>
+	<body>
+		<div class="top-bar">
+			<h3>New Card</h3>
+			<a class="back-button" href="contactlist">Back</a>
+		</div>
+		<form class="new-contact" role="form" method="post" action="/contactlist">
+			<div class="header-img">
+				<object id="display-card" data="/images/template-{{data.template}}.svg" type="image/svg+xml" class="card">Your browser does not support SVG</object>
+			</div>
+			<div class="header-text">
+				<input id="first" type="text" name="first" placeholder="First Name*" required><br>
+				<input id="last" type="text" name="last" placeholder="Last Name*" required>
+			</div>
+			<h3>New Image Upload</h3>
+			<input type="file" name="newImage" placeholder="New Picture"/>
+			
+			<div class="body">
+				<div class="input-field">
+					<img src="images/icon-call.svg">
+					<input id="phone" type="number" class="new" name="phone" placeholder="Phone">
+				</div><br>
+
+				<div class="input-field">
+					<img src="images/icon-company.svg">
+					<input id="company" type="text" class="new" name="company" placeholder="Company">
+				</div><br>
+
+				<div class="input-field">
+					<img src="images/icon-globe.svg">
+					<input id="website" type="text" class="new" name="website" placeholder="Website">
+				</div><br>
+
+				<div class="input-field">
+					<img src="images/icon-mail.svg">
+					<input id="email" type="email" class="new" name="email" placeholder="Email">
+				</div><br>
+
+				<div class="input-field">
+					<img src="images/icon-home.svg">
+					<input id="line1" type="text" class="new" name="line1" placeholder="Address line 1"><br>
+					<input id="line2" type="text" class="new" name="line2" placeholder="Address line 2">
+				</div><br>
+
+				<input class="done-button" type="submit" value="Done">
+			</div>
+		</form>
+		
+		<script>
+			window.onload=function() {
+				updateCard();
+			};
+			
+			function updateCard() {
+				$("input").keyup(function() {
+					var a = document.getElementById("display-card");
+					var svgDoc = a.contentDocument;
+					var svgElement = svgDoc.getElementById(this.id);
+					svgElement.textContent = $(this).val();
+				});
+			}
+		</script>
+	</body>
+</html>

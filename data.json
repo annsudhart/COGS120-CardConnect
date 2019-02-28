@@ -4,133 +4,144 @@
 				"fullName": "Andrea Sudharta",
 				"first": "Andrea",
 				"last": "Sudharta",
-				"phone": "+1 (123)-456-789",
+				"phone": "123456789",
 				"email": "asudharta@spark.co",
 				"line1": "1201 Lightning Trail",
 				"line2": "La Jolla CA 92092",
 				"company": "Spark Co.",
 				"website": "spark.co",
-				"image": "andrea-sudharta.svg"
+				"image": "andrea-sudharta.svg",
+				"template": "1"
 			},
 			{
 				"fullName": "Anthony Rodriguez",
 				"first": "Anthony",
 				"last": "Rodriguez",
-				"phone": "+1 (123)-456-789",
+				"phone": "123456789",
 				"email": "arodriguez@zapp.llc",
 				"line1": "580 Power Way",
 				"line2": "La Jolla CA 92092",
 				"company": "Zapp, LLC",
 				"website": "zapp.llc",
-				"image": "anthony-rodriguez.svg"
+				"image": "anthony-rodriguez.svg",
+				"template": "2"
 			},
 			{
 				"fullName": "Ashley Cantu",
 				"first": "Ashley",
 				"last": "Cantu",
-				"phone": "+1 (123)-456-789",
+				"phone": "123456789",
 				"email": "acantu@socket.corp",
 				"line1": "9500 Gilman Drive",
 				"line2": "La Jolla CA 92092",
 				"company": "Socket Corp",
 				"website": "socket.corp",
-				"image": "ashley-cantu.svg"
+				"image": "ashley-cantu.svg",
+				"template": "2"
 			},
 			{
 				"fullName": "Ben Sampson",
 				"first": "Ben",
 				"last": "Sampson",
-				"phone": "+1 (123)-456-789",
+				"phone": "123456789",
 				"email": "bsampson@spark.co",
 				"line1": "1201 Lightning Trail",
 				"line2": "La Jolla CA 92092",
 				"company": "Spark Co.",
 				"website": "spark.co",
-				"image": "ben-sampson.svg"
+				"image": "ben-sampson.svg",
+				"template": "4"
 			},
 			{
 				"fullName": "Brandon Bird",
 				"first": "Brandon",
 				"last": "Bird",
-				"phone": "+1 (123)-456-789",
+				"phone": "123456789",
 				"email": "bbird@flicker.ly",
 				"line1": "492 Trailblazer Road",
 				"line2": "La Jolla CA 92092",
 				"company": "Flicker.ly",
 				"website": "flicker.ly",
-				"image": "brandon-bird.svg"
+				"image": "brandon-bird.svg",
+				"template": "1"
 			},
 			{
 				"fullName": "Brian Moon",
 				"first": "Brian",
 				"last": "Moon",
-				"phone": "+1 (123)-456-789",
+				"phone": "123456789",
 				"email": "bmoon@socket.corp",
 				"line1": "9500 Gilman Drive",
 				"line2": "La Jolla CA 92092",
 				"company": "Socket Corp",
 				"website": "socket.corp",
-				"image": "brian-moon.svg"
+				"image": "brian-moon.svg",
+				"template": "2"
 			},
 			{
 				"fullName": "Camella Lehmann",
 				"first": "Camella",
 				"last": "Lehmann",
-				"phone": "+1 (123)-456-789",
+				"phone": "123456789",
 				"email": "clehmann@zapp.llc",
 				"line1": "580 Power Way",
 				"line2": "La Jolla CA 92092",
 				"company": "Zapp, LLC",
 				"website": "zapp.llc",
-				"image": "camella-lehmann.svg"
+				"image": "camella-lehmann.svg",
+				"template": "3"
 			},
 			{
 				"fullName": "Chance Braun",
 				"first": "Chance",
 				"last": "Braun",
-				"phone": "+1 (123)-456-789",
+				"phone": "123456789",
 				"email": "cbraun@socket.corp",
 				"line1": "9500 Gilman Drive",
 				"line2": "La Jolla CA 92092",
 				"company": "Socket Corp",
 				"website": "socket.corp",
-				"image": "chance-braun.svg"
+				"image": "chance-braun.svg",
+				"template": "4"
 			},
 			{
 				"fullName": "Christian Cuevas",
 				"first": "Christian",
 				"last": "Cuevas",
-				"phone": "+1 (123)-456-789",
+				"phone": "123456789",
 				"email": "ccuevas@flicker.ly",
 				"line1": "492 Trailblazer Road",
 				"line2": "La Jolla CA 92092",
 				"company": "Flicker.ly",
 				"website": "flicker.ly",
-				"image": "christian-cuevas.svg"
+				"image": "christian-cuevas.svg",
+				"template": "3"
 			},
 			{
 				"fullName": "Daniel Schuyler",
 				"first": "Daniel",
 				"last": "Schuyler",
-				"phone": "+1 (123)-456-789",
+				"phone": "123456789",
 				"email": "dschuyler@flicker.ly",
 				"line1": "492 Trailblazer Road",
 				"line2": "La Jolla CA 92092",
 				"company": "Flicker.ly",
 				"website": "flicker.ly",
-				"image": "daniel-schuyler.svg"
+				"image": "daniel-schuyler.svg",
+				"template": "2"
 			},
 			{
 				"fullName": "Dorothy Emanuel",
 				"first": "Dorothy",
 				"last": "Emanuel",
-				"phone": "+1 (123)-456-789",
+				"phone": "123456789",
 				"email": "demanuel@socket.corp",
 				"line1": "9500 Gilman Drive",
 				"line2": "La Jolla CA 92092",
 				"company": "Socket Corp",
 				"website": "socket.corp",
-				"image": "dorothy-emanuel.svg"
+				"image": "dorothy-emanuel.svg",
+				"template": "1"
 			}
 		]
 }
