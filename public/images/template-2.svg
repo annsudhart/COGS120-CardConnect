@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Card" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 150.6 91.2" style="enable-background:new 0 0 150.6 91.2;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#5E5E5E;}
+	.st2{font-family:'Arial-ItalicMT';}
+	.st3{font-size:4px;}
+	.st4{font-family:'ArialMT';}
+	.st5{font-size:6px;}
+	.st6{font-family:'Arial-BoldMT';}
+	.st7{font-size:7px;}
+	.st8{font-size:9px;}
+</style>
+<g id="Background">
+	<rect class="st0" width="150.6" height="91.2"/>
+	<polygon class="st1" points="150.6,0 96.6,0 73.5,91.2 150.6,91.2 	"/>
+</g>
+<g>
+	<text id="email" transform="matrix(1 0 0 1 17.7979 73.4158)" class="st2 st3"></text>
+</g>
+<g>
+	<text id="website" transform="matrix(1 0 0 1 17.798 78.4731)" class="st2 st3"></text>
+</g>
+<g>
+	<text id="phone" transform="matrix(1 0 0 1 17.798 68.2576)" class="st2 st3"></text>
+</g>
+<g>
+	<text id="line2" transform="matrix(1 0 0 1 103.1395 66.0429)" class="st0 st4 st3"></text>
+</g>
+<g>
+	<text id="line1" transform="matrix(1 0 0 1 103.1396 60.2882)" class="st0 st4 st3"></text>
+</g>
+<g>
+	<text id="position" transform="matrix(1 0 0 1 17.7979 54.4075)" class="st4 st5"></text>
+</g>
+<g>
+	<text id="company" transform="matrix(1 0 0 1 103.1394 48.8334)" class="st0 st6 st7"></text>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 17.7978 31.2728)"><tspan id="first" x="0" y="0" class="st6 st8"></tspan><tspan id="last" x="0" y="10.8" class="st6 st8"></tspan></text>
+</g>
+</svg>

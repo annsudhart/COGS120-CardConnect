@@ -18,7 +18,8 @@ exports.addContact = function(request, response) {
 			"line2": request.body.line2,
 			"company": request.body.company,
 			"website": request.body.website,
-			"image": "placeholder.svg"
+			"image": "placeholder.svg",
+			"template": "1"
 		}
 	data.contact.push(newContact);
 	
