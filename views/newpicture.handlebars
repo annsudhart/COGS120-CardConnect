@@ -10,18 +10,19 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="/css/newpicture.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/newcontact.css">
     <script src="/js/canvas-to-blob.min.js"></script>
     <script src="/js/introHCI.js"></script>
     <script src="/js/camera.js"></script>
     <script src="/js/newpicture.js"></script>
   </head>
   <body>
+    <div class="top-bar">
+			<h3>Choose Picture</h3>
+			<a class="back-button" href="newcontactB">Back</a>
+		</div>
+
     <div id="rsvp">
-      <div class="row">
-        <div class="col">
-          <label for="">Your Photo</label>
-        </div>
-      </div>
         <div class="col-6">
           <div id="camera" class="profile" style="max-width: 250px;">
             <video autoplay id="camera-video"></video>

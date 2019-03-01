@@ -20,7 +20,13 @@
 					<object id="display-card" data="/images/placeholder.svg" type="image/svg+xml" class="card">Your browser does not support SVG</object>
 				</a>
 			</div>
-		
+			<script>
+				console.log(document.referrer);
+				console.log(window.location);
+				if (document.referrer == window.location.href) {
+					$('display-card').data = "/images/timmy-triton.svg";
+				}
+			</script>
 			<div class="header-text">
 				<input id="first" type="text" name="first" placeholder="First Name*" required><br>
 				<input id="last" type="text" name="last" placeholder="Last Name*" required>
