@@ -2,12 +2,12 @@ var data = require("../data.json");
 
 exports.viewA = function(request, response){
 	data['viewAlt'] = false;
-	response.render('newcontact', data);
+	response.render('newcontactA', data);
 };
 
 exports.viewB = function(request, response){
 	data['viewAlt'] = true;
-	response.render('newpicture', data);
+	response.render('newcontactB', data);
 };
 
 /*
