@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="/css/newpicture.css" rel="stylesheet">
     <script src="/js/canvas-to-blob.min.js"></script>
-      <script src="/js/introHCI.js"></script>
+    <script src="/js/introHCI.js"></script>
     <script src="/js/camera.js"></script>
+    <script src="/js/newpicture.js"></script>
   </head>
   <body>
     <div id="rsvp">
@@ -32,8 +33,17 @@
         <div class="col-6">
           <canvas id="camera-canvas"></canvas>
         </div>
-        <button id="camera-button" class="btn btn-primary">Use this Photo</button>
-        <button id="camera-button" class="btn btn-primary">Use default</button>
+        <button id="camera-button" class="btn btn-primary" onclick="saveCanvasImage()">Use this Photo</button>
+        <script type="text/javascript">
+            function saveCanvasImage() {
+              // save image as png
+              var link = document.createElement('a');
+              link.download = "test.png";
+              link.href = $("#camera-canvas").get(0).toDataURL("image/png").replace("image/png", "image/octet-stream");
+              link.click();
+            }
+        </script>
+        <button id="camera-button" class="btn btn-primary" onclick="useDefaultImage">Use default image</button>
       </div>
 
   </body>
