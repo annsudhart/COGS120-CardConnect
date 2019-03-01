@@ -10,8 +10,7 @@ var path = require('path');
 var handlebars = require('express3-handlebars')
 
 var contactlist = require('./routes/contactlist');
-var newcontactA = require('./routes/newcontactA');
-var newcontactB = require('./routes/newcontactB');
+var newcontact = require('./routes/newcontact');
 var existingcontact = require('./routes/existingcontact');
 var editcontact = require('./routes/editcontact');
 var index = require('./routes/index');
@@ -47,8 +46,8 @@ if ('development' == app.get('env')) {
 
 app.get('/', index.view);
 app.get('/contactlist', contactlist.view);
-app.get('/newcontactA', newcontactA.viewA);
-app.get('/newcontactB', newcontactB.viewB);
+app.get('/newcontactA', newcontact.viewA);
+app.get('/newcontactB', newcontact.viewB);
 app.get('/newpicture', newpicture.view);
 //app.post('/newcontact/add', newcontact.addContact);
 app.get('/existingcontact/:name', existingcontact.viewContact);

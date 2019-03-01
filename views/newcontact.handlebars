@@ -1,5 +1,16 @@
 <html>
 	<head>
+		<!-- Google Analytics -->
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-135347833-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+		<!-- End Google Analytics -->
 		<title> Card Connect </title>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,15 +26,18 @@
 		</div>
 		<form class="new-contact" role="form" method="post" action="/contactlist">
 			<div class="header-img">
-				<object id="display-card" data="/images/template-{{data.template}}.svg" type="image/svg+xml" class="card">Your browser does not support SVG</object>
+				<object id="display-card" data="/images/template-1.svg" type="image/svg+xml" class="card">Your browser does not support SVG</object>
 			</div>
 			<div class="header-text">
 				<input id="first" type="text" name="first" placeholder="First Name*" required><br>
 				<input id="last" type="text" name="last" placeholder="Last Name*" required>
 			</div>
-			<h3>New Image Upload</h3>
-			<input type="file" name="newImage" placeholder="New Picture"/>
 			
+			{{#if viewAlt}}
+			<h3>New Image Upload</h3>
+			<input type="file" name="newImage" placeholder="New Picture">
+			{{/if}}
+
 			<div class="body">
 				<div class="input-field">
 					<img src="images/icon-call.svg">
@@ -54,12 +68,12 @@
 				<input class="done-button" type="submit" value="Done">
 			</div>
 		</form>
-		
+
 		<script>
 			window.onload=function() {
 				updateCard();
 			};
-			
+
 			function updateCard() {
 				$("input").keyup(function() {
 					var a = document.getElementById("display-card");

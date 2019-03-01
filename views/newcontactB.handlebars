@@ -23,7 +23,7 @@
 			<script>
 				console.log(document.referrer);
 				console.log(window.location);
-				if (document.referrer == window.location.href) {
+				if (document.referrer == window.location) {
 					$('display-card').data = "/images/timmy-triton.svg";
 				}
 			</script>
@@ -62,26 +62,5 @@
 				<input class="done-button" type="submit" value="Done">
 			</div>
 		</form>
-		
-		<script>
-			window.onload=function() {
-				updateCard();
-			};
-			
-			function updateCard() {
-				$("input").keyup(function() {
-					var a = document.getElementById("display-card");
-					var svgDoc = a.contentDocument;
-					/*var first = svgDoc.getElementById("first");
-					var last = svgDoc.getElementById("last");
-					var input = $("#name").val();
-					var input = input.split(" ");
-					first.textContent = input[0];
-					last.textContent = input[1];*/
-					var svgElement = svgDoc.getElementById(this.id);
-					svgElement.textContent = $(this).val();
-				});
-			}
-		</script>
 	</body>
 </html>
