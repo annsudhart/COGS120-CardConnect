@@ -43,8 +43,13 @@ if ('development' == app.get('env')) {
 
 app.get('/', index.view);
 app.get('/contactlist', contactlist.view);
+<<<<<<< HEAD
 app.get('/newcontactA', newcontact.viewA);
 app.get('/newcontactB', newcontact.viewB);
+=======
+app.get('/newcontactA', newcontactA.viewA);
+app.get('/newcontactB', newcontactB.viewB);
+>>>>>>> 8f9d3dc69233ca9d9f1f0a1c0c3c4c3bfe3dbbbf
 app.get('/newpicture', newpicture.view);
 //app.post('/newcontact/add', newcontact.addContact);
 app.get('/existingcontact/:name', existingcontact.viewContact);
