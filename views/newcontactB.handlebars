@@ -14,18 +14,17 @@
 			<a class="back-button" href="contactlist">Back</a>
 		</div>
 		<form class="new-contact" role="form" method="post" action="/contactlist">
+			
 			<div class="header-img">
-				<object id="display-card" data="/images/template-1.svg" type="image/svg+xml" class="card">Your browser does not support SVG</object>
+				<a href="newpicture" class="svg">
+					<object id="display-card" data="/images/placeholder.svg" type="image/svg+xml" class="card">Your browser does not support SVG</object>
+				</a>
 			</div>
+		
 			<div class="header-text">
 				<input id="first" type="text" name="first" placeholder="First Name*" required><br>
 				<input id="last" type="text" name="last" placeholder="Last Name*" required>
 			</div>
-			<h1>{{data.viewAlt}}</h1>
-			{{#if viewAlt}}
-			<h3>New Image Upload</h3>
-			<input type="file" name="newImage" placeholder="New Picture">
-			{{/if}}
 			
 			<div class="body">
 				<div class="input-field">
@@ -50,8 +49,8 @@
 
 				<div class="input-field">
 					<img src="images/icon-home.svg">
-					<input id="line1" type="text" class="new" name="line1" placeholder="Address line 1"><br>
-					<input id="line2" type="text" class="new" name="line2" placeholder="Address line 2">
+					<input id="address-line-1" type="text" class="new" name="line1" placeholder="Address line 1"><br>
+					<input id="address-line-2" type="text" class="new" name="line2" placeholder="Address line 2">
 				</div><br>
 
 				<input class="done-button" type="submit" value="Done">
@@ -67,6 +66,12 @@
 				$("input").keyup(function() {
 					var a = document.getElementById("display-card");
 					var svgDoc = a.contentDocument;
+					/*var first = svgDoc.getElementById("first");
+					var last = svgDoc.getElementById("last");
+					var input = $("#name").val();
+					var input = input.split(" ");
+					first.textContent = input[0];
+					last.textContent = input[1];*/
 					var svgElement = svgDoc.getElementById(this.id);
 					svgElement.textContent = $(this).val();
 				});

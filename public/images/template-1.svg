@@ -27,10 +27,10 @@
 	<text id="phone" transform="matrix(1 0 0 1 21.2029 66.2406)" class="st0 st2 st3"></text>
 </g>
 <g>
-	<text id="line1" transform="matrix(1 0 0 1 102.9405 68.252)" class="st4 st3"></text>
+	<text id="line2" transform="matrix(1 0 0 1 102.9405 68.252)" class="st4 st3"></text>
 </g>
 <g>
-	<text id="line2" transform="matrix(1 0 0 1 102.9407 62.9134)" class="st4 st3"></text>
+	<text id="line1" transform="matrix(1 0 0 1 102.9407 62.9134)" class="st4 st3"></text>
 </g>
 <g>
 	<text id="position" transform="matrix(1 0 0 1 21.2029 52.3905)" class="st0 st4 st5"></text>

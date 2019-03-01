@@ -13,7 +13,7 @@ var newcontact = require('./routes/newcontact');
 var existingcontact = require('./routes/existingcontact');
 var editcontact = require('./routes/editcontact');
 var index = require('./routes/index');
-var newpic = require('./routes/newpicture')
+var newpicture = require('./routes/newpicture')
 
 // Example route
 // var user = require('./routes/user');
@@ -43,7 +43,9 @@ if ('development' == app.get('env')) {
 
 app.get('/', index.view);
 app.get('/contactlist', contactlist.view);
-app.get('/newcontact-a', newcontact.view);
+app.get('/newcontactA', newcontact.viewA);
+app.get('/newcontactB', newcontact.viewB);
+app.get('/newpicture', newpicture.view);
 //app.post('/newcontact/add', newcontact.addContact);
 app.get('/existingcontact/:name', existingcontact.viewContact);
 app.get('/editcontact/:name', editcontact.editContact);
