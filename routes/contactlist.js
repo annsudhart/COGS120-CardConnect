@@ -40,4 +40,4 @@ exports.deleteContact = function(request, response) {
 		"data": data
 	});
 	response.redirect('contactlist')
-}
+};
