@@ -7,7 +7,7 @@ exports.viewA = function(request, response){
 
 exports.viewB = function(request, response){
 	data['viewAlt'] = true;
-	response.render('newcontact', data);
+	response.render('newpicture', data);
 };
 
 /*
