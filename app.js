@@ -4,6 +4,7 @@
  */
 
 var express = require('express');
+const fileUpload = require('express-fileupload');
 var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars')
@@ -35,6 +36,8 @@ app.use(express.cookieParser('IxD secret key'));
 app.use(express.session());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
+// default options
+app.use(fileUpload());
 
 // development only
 if ('development' == app.get('env')) {
@@ -55,6 +58,11 @@ app.post('/contactlist', contactlist.addContact);
 app.get('/deletecontact/:name', contactlist.deleteContact);
 // Example route
 // app.get('/users', user.list);
+
+app.post('/upload', function(req, res) {
+	let sampleFile = req.files.sampleFile;		// Get the uploaded image from the form
+	sampleFile.mv('/public/images/temp.jpg');  // Save the image on to the path you'd like on the server
+});
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
