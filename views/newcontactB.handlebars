@@ -21,10 +21,11 @@
 				</a>
 			</div>
 			<script>
-				console.log(document.referrer);
-				console.log(window.location);
-				if (document.referrer == window.location) {
-					$('display-card').data = "/images/timmy-triton.svg";
+				console.log(window.location.origin + "/newpicture");
+				console.log(window.location.href);
+				console.log((window.location.origin + "/newpicture") == ("" + window.location.href));
+				if ((window.location.origin + "/newpicture") == (window.location.href)) {
+					$('#display-card').data = "/images/timmy-triton.svg";
 				}
 			</script>
 			<div class="header-text">
