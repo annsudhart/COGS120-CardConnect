@@ -24,10 +24,7 @@ exports.addContact = function(request, response) {
 		}
 	data.contact.push(newContact);
 	
-	response.render('contactlist', {
-		"data": data
-	});
-	//response.redirect('contactlist')
+	response.redirect('existingcontact/' + newContact.fullName);
 };
 
 exports.deleteContact = function(request, response) {
