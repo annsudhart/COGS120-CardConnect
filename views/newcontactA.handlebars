@@ -1,19 +1,19 @@
 <html>
 	<head>
 		<!-- Google Analytics Content Experiment code -->
-<script>function utmx_section(){}function utmx(){}(function(){var
-k='190710345-0',d=document,l=d.location,c=d.cookie;
-if(l.search.indexOf('utm_expid='+k)>0)return;
-function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
-indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
-length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
-'<sc'+'ript src="'+'http'+(l.protocol=='https:'?'s://ssl':
-'://www')+'.google-analytics.com/ga_exp.js?'+'utmxkey='+k+
-'&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='+new Date().
-valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
-'" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
-</script><script>utmx('url','A/B');</script>
-<!-- End of Google Analytics Content Experiment code -->
+		<script>function utmx_section(){}function utmx(){}(function(){var
+		k='190710345-0',d=document,l=d.location,c=d.cookie;
+		if(l.search.indexOf('utm_expid='+k)>0)return;
+		function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
+		indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
+		length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
+		'<sc'+'ript src="'+'http'+(l.protocol=='https:'?'s://ssl':
+		'://www')+'.google-analytics.com/ga_exp.js?'+'utmxkey='+k+
+		'&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='+new Date().
+		valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
+		'" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
+		</script><script>utmx('url','A/B');</script>
+		<!-- End of Google Analytics Content Experiment code -->
 		<title> Card Connect </title>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -45,9 +45,12 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 			<div class="header-text">
 				<input id="first" type="text" name="first" placeholder="First Name*" required><br>
 				<input id="last" type="text" name="last" placeholder="Last Name*" required>
+				<!--
+				<h3>New Image Upload</h3>
+				<input type="file" name="newImage" placeholder="New Picture">
+				-->
 			</div>
-			<h3>New Image Upload</h3>
-			<input type="file" name="newImage" placeholder="New Picture"/>
+			
 
 			<div class="body">
 				<div class="input-field">
@@ -72,8 +75,8 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 
 				<div class="input-field">
 					<img src="images/icon-home.svg">
-					<input id="address-line-1" type="text" class="new" name="line1" placeholder="Address line 1"><br>
-					<input id="address-line-2" type="text" class="new" name="line2" placeholder="Address line 2">
+					<input id="line1" type="text" class="new" name="line1" placeholder="Address line 1"><br>
+					<input id="line2" type="text" class="new" name="line2" placeholder="Address line 2">
 				</div><br>
 
 				<input class="done-button" type="submit" value="Done">
@@ -89,12 +92,6 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 				$("input").keyup(function() {
 					var a = document.getElementById("display-card");
 					var svgDoc = a.contentDocument;
-					/*var first = svgDoc.getElementById("first");
-					var last = svgDoc.getElementById("last");
-					var input = $("#name").val();
-					var input = input.split(" ");
-					first.textContent = input[0];
-					last.textContent = input[1];*/
 					var svgElement = svgDoc.getElementById(this.id);
 					svgElement.textContent = $(this).val();
 				});
