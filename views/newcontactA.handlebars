@@ -38,7 +38,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 			<h3>New Card</h3>
 			<a class="back-button" href="contactlist">Back</a>
 		</div>
-		<form class="new-contact" role="form" onsubmit="sendData()" method="post" action="/contactlist">
+		<form class="new-contact" role="form" onsubmit="return sendData()" method="post" action="/contactlist">
 			<div class="header-img">
 				<object id="display-card" data="/images/template-1.svg" type="image/svg+xml" class="card">Your browser does not support SVG</object>
 			</div>
