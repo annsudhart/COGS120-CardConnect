@@ -9,6 +9,10 @@ html, body, .container {
     height: 100%;
 }
 
+button {
+    margin-bottom: 30px;
+}
+
 h3 {
     display: block;
     font-size: 1.17em;
@@ -22,7 +26,7 @@ h3 {
 div {
    display: inline;
    text-align: center;
-   max-width: 90%;
+   max-width: 100%;
 }
 
 .profile {
@@ -38,13 +42,18 @@ div {
 
 
 #camera-video {
+    display: block;
+    max-width: 300px;
+    margin: 30px auto;
     transform: rotateY(180deg);
     -webkit-transform:rotateY(180deg); /* Safari and Chrome */
     -moz-transform:rotateY(180deg); /* Firefox */
 }
 
 #camera-canvas {
-    
+    display: block;
+    max-width: 300px;
+    margin: 30px auto;
     object-fit: cover;
     /*width: 200px;
     height: 200px;*/
@@ -52,3 +61,4 @@ div {
     -webkit-transform:rotateY(180deg); /* Safari and Chrome */
     -moz-transform:rotateY(180deg); /* Firefox */
 }
+
