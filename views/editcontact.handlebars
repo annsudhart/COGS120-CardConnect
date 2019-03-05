@@ -32,7 +32,7 @@
 			<h3 style="text-align: center;">Edit Card</h3>
 			<a href="javascript:history.back()" class="cancel-button">Cancel</a>
 		</div>
-		<form class="new-contact" role="form" method="post" action="/existingcontact/{{data.fullName}}">
+		<form class="new-contact" role="form" onsubmit="sendData()" method="post" action="/existingcontact/{{data.fullName}}">
 			<div class="header-img">
 				<object id="display-card" data="/images/template-{{data.template}}.svg" type="image/svg+xml" class="card">Your browser does not support SVG</object>
 			</div>
@@ -78,8 +78,13 @@
 			window.onload=function() {
 				loadCard();
 				updateCard();
-			};
+			}
 
+		function sendData() {
+
+					ga('send', 'event', 'update', 'click');
+					alert('edit');
+		}
 			function loadCard() {
 				var a = document.getElementById("display-card");
 				var svgDoc = a.contentDocument;

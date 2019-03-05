@@ -8,7 +8,7 @@ exports.view = function(request, response) {
 
 exports.addContact = function(request, response) {
 	var name = request.body.name;
-	
+
 	var newContact = {
 			"fullName": request.body.first + " " + request.body.last,
 			"first": request.body.first,
@@ -23,7 +23,7 @@ exports.addContact = function(request, response) {
 			"template": "1"
 		}
 	data.contact.push(newContact);
-	
+
 	response.redirect('existingcontact/' + newContact.fullName);
 };
 

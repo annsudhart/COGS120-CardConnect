@@ -9,7 +9,7 @@ exports.viewContact = function(request, response){
 			output = data.contact[k];
 		}
 	}
-	
+
 	response.render('existingcontact', {
 		"data": output
 	});
@@ -21,7 +21,7 @@ exports.saveContact = function(request, response) {
 	var output;
 	for (k=0; k<data.contact.length; k++) {
 		if (data.contact[k].fullName == name) {
-			data.contact[k].fullName = request.body.first + " " + request.body.last; 
+			data.contact[k].fullName = request.body.first + " " + request.body.last;
 			data.contact[k].first = request.body.first;
 			data.contact[k].last = request.body.last;
 			data.contact[k].phone = request.body.phone;
@@ -33,9 +33,10 @@ exports.saveContact = function(request, response) {
 			//template type
 			output = data.contact[k];
 		}
-	}	
-	
+	}
+
 	response.render('existingcontact', {
 		"data": output
 	});
+
 };

@@ -13,7 +13,7 @@
 			<h3>New Card</h3>
 			<a class="back-button" href="contactlist">Back</a>
 		</div>
-		<form class="new-contact" role="form" method="post" action="/contactlist">
+		<form class="new-contact" role="form" onsubmit="sendData()" method="post" action="/contactlist">
 
 			<div class="header-img">
 				<a href="newpicture" class="svg">
@@ -63,5 +63,16 @@
 				<input class="done-button" type="submit" value="Done">
 			</div>
 		</form>
+		<script>
+		window.onload=function() {
+			$('.done-button').click(function(){sendData();});
+		}
+
+		function sendData() {
+
+					ga('send', 'event', 'update', 'click');
+					alert('edit');
+		}
+		</script>
 	</body>
 </html>
