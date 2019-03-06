@@ -8,7 +8,7 @@ exports.view = function(request, response) {
 
 exports.addContact = function(request, response) {
 	var name = request.body.name;
-	
+	console.log(request.body.template);
 	var newContact = {
 			"fullName": request.body.first + " " + request.body.last,
 			"first": request.body.first,
@@ -19,8 +19,7 @@ exports.addContact = function(request, response) {
 			"line2": request.body.line2,
 			"company": request.body.company,
 			"website": request.body.website,
-			"image": "placeholder.svg",
-			"template": "1"
+			"template": request.body.template
 		}
 	data.contact.push(newContact);
 	

@@ -53,6 +53,14 @@ body {
 	margin: 0 auto;
 }
 
+.hide {
+	display: none;
+}
+
+.prev, .next {
+	
+}
+
 .new {
 	margin-left: 7px;
 	width: 250px;

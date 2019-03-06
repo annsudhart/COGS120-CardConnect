@@ -34,7 +34,11 @@
 		</div>
 		<form class="new-contact" role="form" method="post" action="/existingcontact/{{data.fullName}}">
 			<div class="header-img">
-				<object id="display-card" data="/images/template-{{data.template}}.svg" type="image/svg+xml" class="card">Your browser does not support SVG</object>
+				<object id="display-card-1" data="/images/template-{{data.template}}.svg" type="image/svg+xml" class="card">Your browser does not support SVG</object>
+				<object id="" data="" type="image/svg+xml" class="hide"></object>
+				<button type="button" class="prev" onclick="changeSlide(-1)">&#10094;</button>
+				<button type="button" class="next" onclick="changeSlide(1)">&#10095;</button>
+				<input id="template" type="number" name="template" style="display: none;">
 			</div>
 			<div class="header-text">
 				<input id="first" type="text" name="first" value="{{data.first}}" required><br>
@@ -78,39 +82,72 @@
 			window.onload=function() {
 				loadCard();
 				updateCard();
+				loadTemplates();
 			};
 
 			function loadCard() {
-				var a = document.getElementById("display-card");
-				var svgDoc = a.contentDocument;
-
+				var a = document.getElementsByClassName("card")[0];
+				var svgDoc = a.contentDocument;	
 				var first = svgDoc.getElementById("first");
 				var last = svgDoc.getElementById("last");
 				var phone = svgDoc.getElementById("phone");
-				var email = svgDoc.getElementById("email");
 				var company = svgDoc.getElementById("company");
+				var website = svgDoc.getElementById("website");
+				var email = svgDoc.getElementById("email");
 				var line1 = svgDoc.getElementById("line1");
 				var line2 = svgDoc.getElementById("line2");
-				var website = svgDoc.getElementById("website");
-
-				first.textContent = $("#first").val();
-				last.textContent = $("#last").val();
-				phone.textContent = $("#phone").val();
-				email.textContent = $("#email").val();
-				company.textContent = $("#company").val();
-				line1.textContent = $("#line1").val();
-				line2.textContent = $("#line2").val();
-				website.textContent = $("#website").val();
+				if (first == null) {
+					setInterval("loadCard()", 100);
+				} else {
+					first.textContent = $("#first").val();
+					last.textContent = $("#last").val();
+					phone.textContent = $("#phone").val();
+					company.textContent = $("#company").val();
+					website.textContent = $("#website").val();
+					email.textContent = $("#email").val();
+					line1.textContent = $("#line1").val();
+					line2.textContent = $("#line2").val();
+				}
 			}
 
 
 			function updateCard() {
 				$("input").keyup(function() {
-					var a = document.getElementById("display-card");
+					var a = document.getElementsByClassName("card")[0];
 					var svgDoc = a.contentDocument;
 					var svgElement = svgDoc.getElementById(this.id);
 					svgElement.textContent = $(this).val();
 				});
+			}
+			
+			function changeSlide(n) {
+				var currentId = document.getElementsByClassName("card")[0].id;
+				var currentSlide = parseInt(currentId.substring(currentId.length - 1, currentId.length));
+				var newSlide = currentSlide + n
+				if (newSlide == 0) {
+					newSlide = 4;
+				} else if (newSlide == 5) {
+					newSlide = 1;
+				}
+				document.getElementById("display-card-" + newSlide).classList.add("card");
+				document.getElementById("display-card-" + newSlide).classList.remove("hide");
+				document.getElementById("display-card-" + currentSlide).classList.remove("card");
+				document.getElementById("display-card-" + currentSlide).classList.add("hide");
+				$("#template").val(newSlide);
+				loadCard();
+			}
+			
+			function loadTemplates() {
+				var currentId = document.getElementsByClassName("card")[0].id;
+				var currentSlide = parseInt(currentId.substring(currentId.length - 1, currentId.length));
+				var k;
+				for (k = 1; k < 5; k++) {
+					if (k == currentSlide) {
+						
+					} else {
+						$(".header-img").prepend('<object id="display-card-' + k + '" data="/images/template-' + k + '.svg" type="image/svg+xml" class="hide">Your browser does not support SVG</object>');
+					}
+				}
 			}
 		</script>
 	</body>
