@@ -38,7 +38,7 @@
 			<h3>New Card</h3>
 			<a class="back-button" href="contactlist">Back</a>
 		</div>
-		<form class="new-contact" role="form" method="post" action="/contactlist">
+		<form class="new-contact" role="form" onsubmit="return sendData()" method="post" action="/contactlist">
 			<div class="header-img">
 				<object id="display-card-1" data="/images/template-1.svg" type="image/svg+xml" class="card">Your browser does not support SVG</object>
 				<object id="display-card-2" data="/images/template-2.svg" type="image/svg+xml" class="hide">Your browser does not support SVG</object>
@@ -93,7 +93,11 @@
 			window.onload=function() {
 				updateCard();
 			};
+			function sendData() {
 
+						ga('send', 'event', 'update', 'click');
+						//alert('edit');
+			}
 			function updateCard() {
 				$("input").keyup(function() {
 					var a = document.getElementsByClassName("card")[0];

@@ -32,9 +32,9 @@
 			<h3 style="text-align: center;">Edit Card</h3>
 			<a href="javascript:history.back()" class="cancel-button">Cancel</a>
 		</div>
-		<form class="new-contact" role="form" method="post" action="/existingcontact/{{data.fullName}}">
+		<form class="new-contact" role="form" onsubmit="sendData()" method="post" action="/existingcontact/{{data.fullName}}">
 			<div class="header-img">
-				<object id="display-card-1" data="/images/template-{{data.template}}.svg" type="image/svg+xml" class="card">Your browser does not support SVG</object>
+				<object id="display-card-{{data.template}}" data="/images/template-{{data.template}}.svg" type="image/svg+xml" class="card">Your browser does not support SVG</object>
 				<object id="" data="" type="image/svg+xml" class="hide"></object>
 				<button type="button" class="prev" onclick="changeSlide(-1)">&#10094;</button>
 				<button type="button" class="next" onclick="changeSlide(1)">&#10095;</button>
@@ -84,7 +84,13 @@
 				updateCard();
 				loadTemplates();
 			};
+			
 
+		function sendData() {
+
+					ga('send', 'event', 'update', 'click');
+					//alert('edit');
+		}
 			function loadCard() {
 				var a = document.getElementsByClassName("card")[0];
 				var svgDoc = a.contentDocument;	
