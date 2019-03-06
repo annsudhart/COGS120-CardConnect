@@ -17,7 +17,8 @@
     "express-fileupload": "^1.1.1-alpha.3",
     "express3-handlebars": "*",
     "mongodb": "*",
-    "mongoose": "*"
+    "mongoose": "*",
+    "multer": "^1.4.1"
   },
   "engines": {
     "node": "8.9.x"
