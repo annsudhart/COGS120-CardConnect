@@ -94,9 +94,12 @@ app.post('/upload',function(req,res){
       }
       res.end("File is uploaded");
   });
+
+  res.redirect(301, 'newcontactB');
+  res.end();
 });
 
-app.listen(3000,function(){
+app.listen(3001,function(){
   console.log("Working on port 3000");
 });
 
