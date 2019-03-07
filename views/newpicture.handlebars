@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <!-- file upload doesn't work if the line beneath is uncommented-->
+    <!-- script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script -->
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -47,13 +48,11 @@
         <button id="camera-button" class="btn btn-primary" onclick="useDefaultImage">Use default image</button>
       </div>
 
-      <form action="/upload-photo" method="post" enctype="multipart/form-data">
-        <input type="file" name="avatar"/>
-        <input type="submit" value="Upload"/>
+      <form id="uploadForm" method="post" action="/api/upload" enctype="multipart/form-data">
+        <p><input type="text" name="title" /></p>
+        <p><input type="file" name="avatar" /></p>
+        <p><input type="submit" value="Upload" name="submit"></p>
       </form>
-      <!--form ref='uploadForm' id='uploadForm' action='/upload' method='post' encType="multipart/form-data">
-        <input type="file" name="sampleFile" />
-        <input type='submit' value='Upload!' />
-      </form -->    
+
   </body>
 </html>

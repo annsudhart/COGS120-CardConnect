@@ -4,7 +4,6 @@
  */
 
 var express = require('express');
-const fileUpload = require('express-fileupload');
 var multer  = require('multer');
 
 var http = require('http');
@@ -18,8 +17,6 @@ var editcontact = require('./routes/editcontact');
 var index = require('./routes/index');
 var newpicture = require('./routes/newpicture')
 
-var upload = multer({ dest: 'uploads/' });
-
 var storage = multer.diskStorage({
   destination: function (req, file, cb) {
     cb(null, 'uploads/')
@@ -27,13 +24,14 @@ var storage = multer.diskStorage({
     console.log("Set destination to uploads/");
   },
   filename: function (req, file, cb) {
-    cb(null, file.fieldname + '-' + Date.now())
-
-    console.log("Filename " + file.fieldname);
+    cb(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname));
+    path.extname(file.originalname);
+    console.log("Filename " + file.fieldname + path.extname(file.originalname));
   }
 })
 
-upload = multer({ storage: storage });
+var upload = multer({ storage : storage}).single('avatar');
+
 
 // Example route
 // var user = require('./routes/user');
@@ -56,7 +54,7 @@ app.use(express.session());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 // default options
-app.use(fileUpload());
+
 
 // development only
 if ('development' == app.get('env')) {
@@ -75,42 +73,18 @@ app.get('/editcontact/:name', editcontact.editContact);
 app.post('/existingcontact/:name', existingcontact.saveContact);
 app.post('/contactlist', contactlist.addContact);
 app.get('/deletecontact/:name', contactlist.deleteContact);
-app.get('/uploads/:photo', function (req, res) {
-	var filename = req.params.photo;
-  res.sendFile(path.join(__dirname, `/uploads/${filename}`));
-  
-  console.log("Sent to " + path.join(__dirname, `/uploads/${filename}`));
-});
 
-// Example route
-// app.get('/users', user.list);
-
-/*
-app.post('/upload', function(req, res) {
-	let sampleFile = req.files.sampleFile;		// Get the uploaded image from the form
-	sampleFile.mv('/public/images/temp.jpg');  // Save the image on to the path you'd like on the server
-});
-*/
-
-app.post('/upload-photo', upload.single('avatar'), function (req, res, next) {
-  // req.file is the `avatar` file
-  // req.body will hold the text fields, if there were any
-  (upload.single('avatar'))(req, res, function (err) {
-    if (err instanceof multer.MulterError) {
-      // A Multer error occurred when uploading.
-      console.log("Multer error uploading.");
-    } else if (err) {
-      // An unknown error occurred when uploading.
-      console.log("Unknown error uploading.");
-    }
- 
-    // Everything went fine.
-    console.log('Correctly uploading ' + req.params.avatar);
-    
+app.post('/api/upload',function(req,res){
+  upload(req,res,function(err) {
+      if(err) {
+          return res.end("Error uploading file.");
+      }
+      res.end("File is uploaded");
   });
+});
 
-  
-
+app.listen(3000,function(){
+  console.log("Working on port 3000");
 });
 
 http.createServer(app).listen(app.get('port'), function(){
