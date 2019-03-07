@@ -3,6 +3,11 @@ var data = require("../data.json");
 exports.viewB = function(request, response){
 	response.render('newcontactB');
 };
+
+exports.viewBpicture = function(request, response){
+	var imageString = request.params.imageString;
+	response.render('newcontactB');
+};
 /*
 exports.addContact = function(request, response){
 	var name = request.body.name;
