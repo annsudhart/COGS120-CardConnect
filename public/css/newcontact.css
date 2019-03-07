@@ -7,6 +7,11 @@ body {
 
 .top-bar {
 	text-align: center;
+	padding: 20px;
+}
+
+h3 {
+	margin: 0;
 }
 
 .new-contact {
@@ -48,7 +53,7 @@ body {
 }
 
 .card {
-	
+
 }
 
 .img-container {
@@ -87,7 +92,7 @@ body {
 	background-color: lightgrey;
 	border-radius: 50%;
 	display: inline-block;
-}	
+}
 
 .highlight {
 	background-color: black;
@@ -105,15 +110,13 @@ body {
 }
 
 .done-button, .edit-button {
-	position: absolute;
-	top: 15px;
-	right: 15px;
+	float: right;
+	display: inline-block;
 }
 
 .back-button, .cancel-button {
-	position: absolute;
-	top: 15px;
-	left: 15px;
+	float: left;
+	display: inline-block;
 }
 
 .prof-pic {
@@ -140,15 +143,14 @@ body {
 
 a.svg {
 	position: relative;
-	display: block; 
+	display: block;
 }
 
 a.svg:after {
-	content: ""; 
+	content: "";
 	position: absolute;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left:0;
 }
-  
