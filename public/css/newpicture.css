@@ -11,6 +11,7 @@ html, body, .container {
 
 button {
     margin-bottom: 30px;
+    justify-content: center;
 }
 
 h3 {
@@ -61,4 +62,3 @@ div {
     -webkit-transform:rotateY(180deg); /* Safari and Chrome */
     -moz-transform:rotateY(180deg); /* Firefox */
 }
-

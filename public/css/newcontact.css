@@ -156,3 +156,12 @@ a.svg:after {
 	bottom: 0;
 	left:0;
 }
+
+
+.header-img {
+	text-align: center;
+}
+
+#display-card {
+    max-width: 300px;
+}
