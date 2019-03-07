@@ -27,7 +27,9 @@
 			<a href="/editcontact/{{data.fullName}}" class="edit-button">Edit</a>
 		</div>
 			<div class="header-img">
-				<object id="display-card" data="/images/template-{{data.template}}.svg" type="image/svg+xml" class="card">Your browser does not support SVG</object>
+				<div class="img-container">
+					<object id="display-card" data="/images/template-{{data.template}}.svg" type="image/svg+xml" class="card">Your browser does not support SVG</object>
+				</div>
 			</div>
 			<div class="header-text">
 				<h3 id="full" class="full-name">{{data.fullName}}</h3>

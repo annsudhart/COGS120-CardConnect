@@ -46,19 +46,51 @@ body {
 	margin-left: 7px;
 	width: 250px;
 }
+
 .card {
+	
+}
+
+.img-container {
 	width: 70%;
 	max-width: 300px;
 	display: block;
 	margin: 0 auto;
+	position: relative;
+}
+
+.prev {
+	position: absolute;
+	top: 40%;
+	left: -30px;
+}
+
+.next {
+	position: absolute;
+	top: 40%;
+	right: -30px;
 }
 
 .hide {
 	display: none;
 }
 
-.prev, .next {
-	
+.dot-container {
+	margin: 10px auto;
+	max-width: 100px;
+}
+
+.dot {
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: lightgrey;
+	border-radius: 50%;
+	display: inline-block;
+}	
+
+.highlight {
+	background-color: black;
 }
 
 .new {
