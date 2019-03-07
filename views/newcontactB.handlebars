@@ -31,6 +31,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 			ga('create', 'UA-135347833-1', 'auto');
 			ga('send', 'pageview');
 		</script>
+		<script src="/public/js/newpicture.js"></script>
 		<!-- End Google Analytics -->
 	</head>
 	<body>
@@ -50,7 +51,12 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 				console.log(window.location.href);
 				console.log((window.location.origin + "/newpicture") == ("" + window.location.href));
 				if ((window.location.origin + "/newpicture") == (window.location.href)) {
-					$('#display-card')[0].data = "/images/timmy-triton.svg";
+					console.log(getCanvasImage());
+					if(getCanvasImage() != "" && getCanvasImage() != null) {
+						$('#display-card')[0].data = getCanvasImage();
+					} else {
+						$('#display-card')[0].data = "/images/timmy-triton.svg";
+					}
 				}
 			</script>
 			<div class="header-text">
