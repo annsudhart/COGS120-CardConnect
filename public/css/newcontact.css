@@ -114,6 +114,9 @@ h3 {
 	display: inline-block;
 }
 
+.done-button {
+	margin-top: -22px;
+}
 .back-button, .cancel-button {
 	float: left;
 	display: inline-block;
