@@ -41,9 +41,11 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 			<input class="done-button" type="submit" value="Done">
 		</div>
 			<div class="header-img">
-				<a href="newpicture" class="svg">
-					<object id="display-card" data="/images/placeholder.svg" type="image/svg+xml" class="card">Your browser does not support SVG</object>
-				</a>
+				<div class="img-container">
+					<a href="newpicture" class="svg">
+						<object id="display-card" data="/images/placeholder.svg" type="image/svg+xml" class="card">Your browser does not support SVG</object>
+					</a>
+				</div>
 			</div>
 			<script>
 				console.log(window.location.origin + "/newpicture");
