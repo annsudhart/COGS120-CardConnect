@@ -30,7 +30,19 @@ var storage = multer.diskStorage({
   }
 })
 
-var upload = multer({ storage : storage}).single('avatar');
+var upload = multer({
+  storage : storage,
+  fileFilter: function (req, file, callback) {
+    var ext = path.extname(file.originalname);
+    if(ext !== '.png' && ext !== '.jpg' && ext !== '.gif' && ext !== '.jpeg') {
+        return callback(new Error('Only images are allowed'));
+    }
+    callback(null, true)
+    },
+    limits:{
+        fileSize: 1024 * 1024
+    }
+}).single('avatar');
 
 
 // Example route
@@ -74,7 +86,8 @@ app.post('/existingcontact/:name', existingcontact.saveContact);
 app.post('/contactlist', contactlist.addContact);
 app.get('/deletecontact/:name', contactlist.deleteContact);
 
-app.post('/api/upload',function(req,res){
+app.post('/upload',function(req,res){
+
   upload(req,res,function(err) {
       if(err) {
           return res.end("Error uploading file.");
@@ -83,7 +96,7 @@ app.post('/api/upload',function(req,res){
   });
 });
 
-app.listen(3000,function(){
+app.listen(3001,function(){
   console.log("Working on port 3000");
 });
 
