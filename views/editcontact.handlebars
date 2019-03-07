@@ -162,6 +162,7 @@
 				for (k = 1; k < 5; k++) {
 					if (k == currentSlide) {
 						document.getElementById("dot-" + k).classList.add("highlight");
+						$("#template").val(k);
 					} else {
 						$(".img-container").prepend('<object id="display-card-' + k + '" data="/images/template-' + k + '.svg" type="image/svg+xml" class="hide">Your browser does not support SVG</object>');
 					}
@@ -181,7 +182,7 @@
 
 				currentDot.classList.remove("highlight");
 				newDot.classList.add("highlight");
-
+				$("#template").val(n);
 				loadCard();
 			}
 		</script>
