@@ -9,7 +9,7 @@ exports.viewContact = function(request, response){
 			output = data.contact[k];
 		}
 	}
-
+	
 	response.render('existingcontact', {
 		"data": output
 	});

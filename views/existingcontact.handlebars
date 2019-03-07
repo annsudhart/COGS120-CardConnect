@@ -28,7 +28,7 @@
 		</div>
 			<div class="header-img">
 				<div class="img-container">
-					<object id="display-card" data="/images/template-{{data.template}}.svg" type="image/svg+xml" class="card">Your browser does not support SVG</object>
+					<object id="display-template" data="/images/{{data.template}}" type="image/svg+xml" class="card">Your browser does not support SVG</object>
 				</div>
 			</div>
 			<div class="header-text">
@@ -69,7 +69,7 @@
 			}
 			
 			function loadCard() {
-				var a = document.getElementById("display-card");
+				var a = document.getElementById("display-template");
 				var svgDoc = a.contentDocument;
 
 				var first = svgDoc.getElementById("first");

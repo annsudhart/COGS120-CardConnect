@@ -34,29 +34,10 @@
         
       </div>
 
-      <div class="col-6">
-        <canvas id="camera-canvas"></canvas>
-      </div>
-    </div>
-    
-    <div class="photo-options">
-      <button id="camera-button" class="btn btn-primary" onclick="useDefaultImage">Use default image</button>
-      <button id="camera-button" class="btn btn-primary" onclick="saveCanvasImage()">Use this Photo</button>
-
-        <!-- script type="text/javascript">
-            function saveCanvasImage() {
-              // save image as png
-              var link = document.createElement('a');
-              link.download = "test.png";
-              link.href = $("#camera-canvas").get(0).toDataURL("image/png").replace("image/png", "image/octet-stream");
-              link.click();
-            }
-        </script -->
-        <form id="uploadForm" method="post" action="/upload" enctype="multipart/form-data">
-          <p><input type="text" name="title" /></p>
-          <p><input type="file" name="avatar" /></p>
-          <p><input type="submit" value="Upload" name="submit"></p>
-        </form>
+        <div class="col-6">
+          <canvas id="camera-canvas"></canvas>
+        </div>
+        <button id="camera-button" class="btn btn-primary" onclick="saveCanvasImage()">Use this Photo</button>			
     </div>
   </body>
 </html>
