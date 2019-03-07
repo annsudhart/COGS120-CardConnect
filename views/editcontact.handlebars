@@ -28,12 +28,12 @@
 		</script>
 	</head>
 	<body>
+	<form class="new-contact" role="form" onsubmit="sendData()" method="post" action="/existingcontact/{{data.fullName}}">
 		<div class="top-bar">
 			<a href="javascript:history.back()" class="cancel-button">Cancel</a>
 			<h3 style="text-align: center;">Edit Card</h3>
 			<input class="done-button" type="submit" value="Done">
 		</div>
-		<form class="new-contact" role="form" onsubmit="sendData()" method="post" action="/existingcontact/{{data.fullName}}">
 			<div class="header-img">
 				<div class="img-container">
 					<object id="display-card-{{data.template}}" data="/images/template-{{data.template}}.svg" type="image/svg+xml" class="card">Your browser does not support SVG</object>

@@ -34,12 +34,12 @@
 		<!-- End Google Analytics -->
 	</head>
 	<body>
+		<form class="new-contact" role="form" onsubmit="return sendData()" method="post" action="/contactlist">
 		<div class="top-bar">
 			<a class="back-button" href="contactlist">Back</a>
 			<h3>New Card</h3>
 			<input class="done-button" type="submit" value="Done">
 		</div>
-		<form class="new-contact" role="form" onsubmit="return sendData()" method="post" action="/contactlist">
 			<div class="header-img">
 				<div class="img-container">
 					<object id="display-card-1" data="/images/template-1.svg" type="image/svg+xml" class="card">Your browser does not support SVG</object>
