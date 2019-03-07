@@ -34,19 +34,28 @@
 		<!-- End Google Analytics -->
 	</head>
 	<body>
-		<div class="top-bar">
-			<h3>New Card</h3>
-			<a class="back-button" href="contactlist">Back</a>
-		</div>
 		<form class="new-contact" role="form" onsubmit="return sendData()" method="post" action="/contactlist">
+		<div class="top-bar">
+			<a class="back-button" href="contactlist">Back</a>
+			<h3>New Card</h3>
+			<input class="done-button" type="submit" value="Done">
+		</div>
 			<div class="header-img">
-				<object id="display-card-1" data="/images/template-1.svg" type="image/svg+xml" class="card">Your browser does not support SVG</object>
-				<object id="display-card-2" data="/images/template-2.svg" type="image/svg+xml" class="hide">Your browser does not support SVG</object>
-				<object id="display-card-3" data="/images/template-3.svg" type="image/svg+xml" class="hide">Your browser does not support SVG</object>
-				<object id="display-card-4" data="/images/template-4.svg" type="image/svg+xml" class="hide">Your browser does not support SVG</object>
-				<button type="button" class="prev" onclick="changeSlide(-1)">&#10094;</button>
-				<button type="button" class="next" onclick="changeSlide(1)">&#10095;</button>
-				<input id="template" type="number" name="template" style="display: none;">
+				<div class="img-container">
+					<object id="display-card-1" data="/images/template-1.svg" type="image/svg+xml" class="card">Your browser does not support SVG</object>
+					<object id="display-card-2" data="/images/template-2.svg" type="image/svg+xml" class="hide">Your browser does not support SVG</object>
+					<object id="display-card-3" data="/images/template-3.svg" type="image/svg+xml" class="hide">Your browser does not support SVG</object>
+					<object id="display-card-4" data="/images/template-4.svg" type="image/svg+xml" class="hide">Your browser does not support SVG</object>
+					<button type="button" class="prev" onclick="shiftSlide(-1)">&#10094;</button>
+					<button type="button" class="next" onclick="shiftSlide(1)">&#10095;</button>
+					<input id="template" type="number" name="template" style="display: none;">
+					<div class="dot-container">
+						<div id="dot-1" class="dot highlight" onclick="changeSlide(1)"></div>
+						<div id="dot-2" class="dot" onclick="changeSlide(2)"></div>
+						<div id="dot-3" class="dot" onclick="changeSlide(3)"></div>
+						<div id="dot-4" class="dot" onclick="changeSlide(4)"></div>
+					</div>
+				</div>
 			</div>
 			<div class="header-text">
 				<input id="first" type="text" name="first" placeholder="First Name*" required><br>
@@ -56,7 +65,7 @@
 				<input type="file" name="newImage" placeholder="New Picture">
 				-->
 			</div>
-			
+
 
 			<div class="body">
 				<div class="input-field">
@@ -84,14 +93,13 @@
 					<input id="line1" type="text" class="new" name="line1" placeholder="Address line 1"><br>
 					<input id="line2" type="text" class="new" name="line2" placeholder="Address line 2">
 				</div><br>
-
-				<input class="done-button" type="submit" value="Done">
 			</div>
 		</form>
 
 		<script>
 			window.onload=function() {
 				updateCard();
+				$("#template").val(1);
 			};
 			function sendData() {
 
@@ -106,10 +114,10 @@
 					svgElement.textContent = $(this).val();
 				});
 			}
-			
-			function loadCard() {				
+
+			function loadCard() {
 				var a = document.getElementsByClassName("card")[0];
-				var svgDoc = a.contentDocument;	
+				var svgDoc = a.contentDocument;
 				var first = svgDoc.getElementById("first");
 				var last = svgDoc.getElementById("last");
 				var phone = svgDoc.getElementById("phone");
@@ -131,21 +139,45 @@
 					line2.textContent = $("#line2").val();
 				}
 			}
-			
-			function changeSlide(n) {
+
+			function shiftSlide(n) {
 				var currentId = document.getElementsByClassName("card")[0].id;
 				var currentSlide = parseInt(currentId.substring(currentId.length - 1, currentId.length));
 				var newSlide = currentSlide + n
+
 				if (newSlide == 0) {
 					newSlide = 4;
 				} else if (newSlide == 5) {
 					newSlide = 1;
 				}
+
+				var currentDot = document.getElementsByClassName("highlight")[0];
+				var newDot = document.getElementById("dot-" + newSlide);
+				currentDot.classList.remove("highlight");
+				newDot.classList.add("highlight");
+
 				document.getElementById("display-card-" + newSlide).classList.add("card");
 				document.getElementById("display-card-" + newSlide).classList.remove("hide");
 				document.getElementById("display-card-" + currentSlide).classList.remove("card");
 				document.getElementById("display-card-" + currentSlide).classList.add("hide");
 				$("#template").val(newSlide);
+				loadCard();
+			}
+
+			function changeSlide(n) {
+				var currentSlide = document.getElementsByClassName("card")[0];
+				var newSlide = document.getElementById("display-card-" + n);
+				var currentDot = document.getElementsByClassName("highlight")[0];
+				var newDot = document.getElementById("dot-" + n);
+
+				currentSlide.classList.add("hide");
+				currentSlide.classList.remove("card");
+				newSlide.classList.add("card");
+				newSlide.classList.remove("hide");
+
+				currentDot.classList.remove("highlight");
+				newDot.classList.add("highlight");
+				$("#template").val(n);
 				loadCard();
 			}
 		</script>

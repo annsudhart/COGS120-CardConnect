@@ -7,6 +7,23 @@ body {
 
 .top-bar {
 	text-align: center;
+	margin: 30px 0;
+}
+
+h3 {
+	
+}
+
+.done-button, .edit-button {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+
+.back-button, .cancel-button {
+	position: absolute;
+	top: 15px;
+	left: 15px;
 }
 
 .new-contact {
@@ -46,19 +63,51 @@ body {
 	margin-left: 7px;
 	width: 250px;
 }
+
 .card {
-	width: 70%;
+
+}
+
+.img-container {
 	max-width: 300px;
+	height: 200px;
 	display: block;
 	margin: 0 auto;
+	position: relative;
+}
+
+.prev {
+	position: absolute;
+	top: 40%;
+	left: -30px;
+}
+
+.next {
+	position: absolute;
+	top: 40%;
+	right: -30px;
 }
 
 .hide {
 	display: none;
 }
 
-.prev, .next {
-	
+.dot-container {
+	margin: 10px auto;
+	max-width: 100px;
+}
+
+.dot {
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: lightgrey;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.highlight {
+	background-color: black;
 }
 
 .new {
@@ -70,18 +119,6 @@ body {
 	clear: both;
 	margin: 2vh 0;
 	display: inline-block;
-}
-
-.done-button, .edit-button {
-	position: absolute;
-	top: 15px;
-	right: 15px;
-}
-
-.back-button, .cancel-button {
-	position: absolute;
-	top: 15px;
-	left: 15px;
 }
 
 .prof-pic {
@@ -108,15 +145,14 @@ body {
 
 a.svg {
 	position: relative;
-	display: block; 
+	display: block;
 }
 
 a.svg:after {
-	content: ""; 
+	content: "";
 	position: absolute;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left:0;
 }
-  

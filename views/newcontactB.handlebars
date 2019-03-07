@@ -34,11 +34,12 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 		<!-- End Google Analytics -->
 	</head>
 	<body>
+	<form class="new-contact" role="form" onsubmit="return sendData()" method="post" action="/contactlist">
 		<div class="top-bar">
+	  	<a class="back-button" href="contactlist">Back</a>
 			<h3>New Card</h3>
-			<a class="back-button" href="contactlist">Back</a>
+			<input class="done-button" type="submit" value="Done">
 		</div>
-		<form class="new-contact" role="form" onsubmit="return sendData()" method="post" action="/contactlist">
 			<div class="header-img">
 				<a href="newpicture" class="svg">
 					<object id="display-card" data="/images/placeholder.svg" type="image/svg+xml" class="card">Your browser does not support SVG</object>
@@ -83,8 +84,6 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 					<input id="line1" type="text" class="new" name="line1" placeholder="Address line 1"><br>
 					<input id="line2" type="text" class="new" name="line2" placeholder="Address line 2">
 				</div><br>
-
-				<input class="done-button" type="submit" value="Done">
 			</div>
 		</form>
 		<script>
