@@ -9,7 +9,7 @@ exports.editContact = function(request, response) {
 			output = data.contact[k];
 		}
 	}
-	
+	console.log(output);
 	response.render('editcontact', {
 		"data": output
 	});

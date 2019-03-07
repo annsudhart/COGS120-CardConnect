@@ -11,7 +11,7 @@
 				"company": "Spark Co.",
 				"website": "spark.co",
 				"image": "andrea-sudharta.svg",
-				"template": "1"
+				"template": "template-1.svg"
 			},
 			{
 				"fullName": "Anthony Rodriguez",
@@ -24,7 +24,7 @@
 				"company": "Zapp, LLC",
 				"website": "zapp.llc",
 				"image": "anthony-rodriguez.svg",
-				"template": "2"
+				"template": "template-2.svg"
 			},
 			{
 				"fullName": "Ashley Cantu",
@@ -37,7 +37,7 @@
 				"company": "Socket Corp",
 				"website": "socket.corp",
 				"image": "ashley-cantu.svg",
-				"template": "2"
+				"template": "template-2.svg"
 			},
 			{
 				"fullName": "Ben Sampson",
@@ -50,7 +50,7 @@
 				"company": "Spark Co.",
 				"website": "spark.co",
 				"image": "ben-sampson.svg",
-				"template": "4"
+				"template": "template-4.svg"
 			},
 			{
 				"fullName": "Brandon Bird",
@@ -63,7 +63,7 @@
 				"company": "Flicker.ly",
 				"website": "flicker.ly",
 				"image": "brandon-bird.svg",
-				"template": "1"
+				"template": "template-1.svg"
 			},
 			{
 				"fullName": "Brian Moon",
@@ -76,7 +76,7 @@
 				"company": "Socket Corp",
 				"website": "socket.corp",
 				"image": "brian-moon.svg",
-				"template": "2"
+				"template": "template-2.svg"
 			},
 			{
 				"fullName": "Camella Lehmann",
@@ -89,7 +89,7 @@
 				"company": "Zapp, LLC",
 				"website": "zapp.llc",
 				"image": "camella-lehmann.svg",
-				"template": "3"
+				"template": "template-3.svg"
 			},
 			{
 				"fullName": "Chance Braun",
@@ -102,7 +102,7 @@
 				"company": "Socket Corp",
 				"website": "socket.corp",
 				"image": "chance-braun.svg",
-				"template": "4"
+				"template": "template-4.svg"
 			},
 			{
 				"fullName": "Christian Cuevas",
@@ -115,7 +115,7 @@
 				"company": "Flicker.ly",
 				"website": "flicker.ly",
 				"image": "christian-cuevas.svg",
-				"template": "3"
+				"template": "template-3.svg"
 			},
 			{
 				"fullName": "Daniel Schuyler",
@@ -128,7 +128,7 @@
 				"company": "Flicker.ly",
 				"website": "flicker.ly",
 				"image": "daniel-schuyler.svg",
-				"template": "2"
+				"template": "template-2.svg"
 			},
 			{
 				"fullName": "Dorothy Emanuel",
@@ -141,7 +141,7 @@
 				"company": "Socket Corp",
 				"website": "socket.corp",
 				"image": "dorothy-emanuel.svg",
-				"template": "1"
+				"template": "template-1.svg"
 			}
 		]
 }
