@@ -10,6 +10,9 @@ exports.viewB = function(request, response){
 
 exports.processImage = function(request, response) {
 	var url = request.body.url;
-	response.render("newcontactB", {"url": url, "img": true});
+	response.render("newcontactB", {
+		"url": url, 
+		"img": "false"
+	}); 
 	console.log(url);
 };

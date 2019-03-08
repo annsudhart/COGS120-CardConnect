@@ -6,7 +6,6 @@ function saveCanvasImage() {
 
     dataURL = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
 	$("#url").val(dataURL);
-	console.log(dataURL);
 }
 
 function getCanvasImage() {
