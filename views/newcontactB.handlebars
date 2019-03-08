@@ -18,7 +18,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="/css/newcontact.css">
 		<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 		<!-- Google Analytics -->
@@ -31,8 +31,8 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 			ga('create', 'UA-135347833-1', 'auto');
 			ga('send', 'pageview');
 		</script>
-		<script src="/public/js/newpicture.js"></script>
 		<!-- End Google Analytics -->
+		<script src="/js/newpicture.js"></script>
 	</head>
 	<body>
 	<form class="new-contact" role="form" onsubmit="return sendData()" method="post" action="/contactlist">
@@ -44,11 +44,17 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 			<div class="header-img">
 				<div class="img-container">
 					<a href="newpicture" class="svg">
-						<object id="display-card" data="/images/placeholder.svg" type="image/svg+xml" class="card">Your browser does not support SVG</object>
+						{{#if img}}
+							<img id="display-card" class="card" src="{{url}}">
+						{{else}}
+							Click to add a picture
+						{{/if}}
+						<input id="template" type="text" name="template" style="display: none;" value="{{url}}">
+						<input id="svg" type="text" name="svg" style="display: none;" value="false">
 					</a>
 				</div>
 			</div>
-			<script>
+			<!--<script>
 				console.log(window.location.origin + "/newpicture");
 				console.log(window.location.href);
 				console.log((window.location.origin + "/newpicture") == ("" + window.location.href));
@@ -60,7 +66,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 						$('#display-card')[0].data = "/images/timmy-triton.svg";
 					}
 				}
-			</script>
+			</script>-->
 			<div class="header-text">
 				<input id="first" type="text" name="first" placeholder="First Name*" required><br>
 				<input id="last" type="text" name="last" placeholder="Last Name*" required>
@@ -98,7 +104,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 		function sendData() {
 
 					ga('send', 'event', 'update', 'click');
-					alert('edit');
+					//alert('edit');
 		}
 		</script>
 	</body>

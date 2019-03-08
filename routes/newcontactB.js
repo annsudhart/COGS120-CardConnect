@@ -8,6 +8,10 @@ exports.viewBpicture = function(request, response){
 	var imageString = request.params.imageString;
 	response.render('newcontactB');
 };
+
+exports.processImage = function(request, response) {
+	console.log(request.body.template);
+};
 /*
 exports.addContact = function(request, response){
 	var name = request.body.name;

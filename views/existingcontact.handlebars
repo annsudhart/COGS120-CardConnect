@@ -28,7 +28,11 @@
 		</div>
 			<div class="header-img">
 				<div class="img-container">
-					<object id="display-template" data="/images/{{data.template}}" type="image/svg+xml" class="card">Your browser does not support SVG</object>
+					{{#if data.svg}}
+						<object id="display-template" data="{{data.template}}" type="image/svg+xml" class="card">Your browser does not support SVG</object>
+					{{else}}	
+						<img src="{{data.template}}">
+					{{/if}}
 				</div>
 			</div>
 			<div class="header-text">

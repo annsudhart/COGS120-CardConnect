@@ -11,7 +11,8 @@
 				"company": "Spark Co.",
 				"website": "spark.co",
 				"image": "andrea-sudharta.svg",
-				"template": "template-1.svg"
+				"template": "/images/template-1.svg",
+				"svg": true
 			},
 			{
 				"fullName": "Anthony Rodriguez",
@@ -24,7 +25,8 @@
 				"company": "Zapp, LLC",
 				"website": "zapp.llc",
 				"image": "anthony-rodriguez.svg",
-				"template": "template-2.svg"
+				"template": "/images/template-2.svg",
+				"svg": true
 			},
 			{
 				"fullName": "Ashley Cantu",
@@ -37,7 +39,8 @@
 				"company": "Socket Corp",
 				"website": "socket.corp",
 				"image": "ashley-cantu.svg",
-				"template": "template-2.svg"
+				"template": "/images/template-2.svg",
+				"svg": true
 			},
 			{
 				"fullName": "Ben Sampson",
@@ -50,7 +53,8 @@
 				"company": "Spark Co.",
 				"website": "spark.co",
 				"image": "ben-sampson.svg",
-				"template": "template-4.svg"
+				"template": "/images/template-4.svg",
+				"svg": true
 			},
 			{
 				"fullName": "Brandon Bird",
@@ -63,7 +67,8 @@
 				"company": "Flicker.ly",
 				"website": "flicker.ly",
 				"image": "brandon-bird.svg",
-				"template": "template-1.svg"
+				"template": "/images/template-1.svg",
+				"svg": true
 			},
 			{
 				"fullName": "Brian Moon",
@@ -76,7 +81,8 @@
 				"company": "Socket Corp",
 				"website": "socket.corp",
 				"image": "brian-moon.svg",
-				"template": "template-2.svg"
+				"template": "/images/template-2.svg",
+				"svg": true
 			},
 			{
 				"fullName": "Camella Lehmann",
@@ -89,7 +95,8 @@
 				"company": "Zapp, LLC",
 				"website": "zapp.llc",
 				"image": "camella-lehmann.svg",
-				"template": "template-3.svg"
+				"template": "/images/template-3.svg",
+				"svg": true
 			},
 			{
 				"fullName": "Chance Braun",
@@ -102,7 +109,8 @@
 				"company": "Socket Corp",
 				"website": "socket.corp",
 				"image": "chance-braun.svg",
-				"template": "template-4.svg"
+				"template": "/images/template-4.svg",
+				"svg": true
 			},
 			{
 				"fullName": "Christian Cuevas",
@@ -115,7 +123,8 @@
 				"company": "Flicker.ly",
 				"website": "flicker.ly",
 				"image": "christian-cuevas.svg",
-				"template": "template-3.svg"
+				"template": "/images/template-3.svg",
+				"svg": true
 			},
 			{
 				"fullName": "Daniel Schuyler",
@@ -128,7 +137,8 @@
 				"company": "Flicker.ly",
 				"website": "flicker.ly",
 				"image": "daniel-schuyler.svg",
-				"template": "template-2.svg"
+				"template": "/images/template-2.svg",
+				"svg": true
 			},
 			{
 				"fullName": "Dorothy Emanuel",
@@ -141,7 +151,8 @@
 				"company": "Socket Corp",
 				"website": "socket.corp",
 				"image": "dorothy-emanuel.svg",
-				"template": "template-1.svg"
+				"template": "/images/template-1.svg",
+				"svg": true
 			}
 		]
 }

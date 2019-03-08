@@ -19,6 +19,7 @@ exports.saveContact = function(request, response) {
 	var name = request.params.name;
 	var k;
 	var output;
+	console.log(request.body.template);
 	for (k=0; k<data.contact.length; k++) {
 		if (data.contact[k].fullName == name) {
 			data.contact[k].fullName = request.body.first + " " + request.body.last;

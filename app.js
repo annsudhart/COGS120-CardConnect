@@ -83,6 +83,7 @@ app.get('/editcontact/:name', editcontact.editContact);
 app.post('/existingcontact/:name', existingcontact.saveContact);
 app.post('/contactlist', contactlist.addContact);
 app.get('/deletecontact/:name', contactlist.deleteContact);
+app.post('/newcontactB', newcontact.processImage);
 
 app.post('/upload',function(req,res){
 

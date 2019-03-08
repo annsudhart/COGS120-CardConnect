@@ -13,6 +13,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="/css/newpicture.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/newcontact.css">
     <script src="/js/canvas-to-blob.min.js"></script>
     <script src="/js/introHCI.js"></script>
@@ -37,7 +38,11 @@
         <div class="col-6">
           <canvas id="camera-canvas"></canvas>
         </div>
-        <button id="camera-button" class="btn btn-primary" onclick="saveCanvasImage()">Use this Photo</button>			
+		
+		<form role="form" method="post" action="/newcontactB">
+			<input id="url" type="text" name="url" style="display: none;">
+			<button id="camera-button" class="btn btn-primary" type="submit" onclick="saveCanvasImage()">Use this Photo</button>	
+		</form>
     </div>
   </body>
 </html>

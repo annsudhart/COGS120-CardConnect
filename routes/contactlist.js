@@ -8,6 +8,11 @@ exports.view = function(request, response) {
 
 exports.addContact = function(request, response) {
 	var name = request.body.name;
+	var svg = true;
+	if (request.body.svg == "false") {
+		svg = false;
+	}	
+	
 	var newContact = {
 			"fullName": request.body.first + " " + request.body.last,
 			"first": request.body.first,
@@ -18,10 +23,11 @@ exports.addContact = function(request, response) {
 			"line2": request.body.line2,
 			"company": request.body.company,
 			"website": request.body.website,
-			"template": request.body.template
+			"template": request.body.template,
+			"svg": svg
 		}
 	data.contact.push(newContact);
-
+	
 	response.redirect('existingcontact/' + newContact.fullName);
 };
 
