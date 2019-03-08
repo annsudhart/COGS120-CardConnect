@@ -48,7 +48,7 @@
 						{{#if img}}
 							<img id="display-card" class="card" src="{{url}}">
 						{{else}}
-							Click to add a picture
+							<object data="/images/placeholder.svg" type="image/svg+xml" class="card">Your browser does not support SVG</object>
 						{{/if}}
 						<input id="template" type="text" name="template" style="display: none;" value="{{url}}">
 						<input id="svg" type="text" name="svg" style="display: none;" value="false">
