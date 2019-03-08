@@ -7,6 +7,11 @@ body {
 	line-height: normal;
 }
 
+a {
+	text-decoration: none;
+	color: grey;
+}
+
 input {
 	font-size: 1rem;
 	margin: 0.25rem auto;
@@ -33,6 +38,9 @@ h3 {
 	margin-top: 6px;
 }
 
+.delete-button {
+	color: red;
+}
 .back-button, .cancel-button {
 	float: left;
 	margin-top: 6px;
@@ -139,6 +147,10 @@ h3 {
 	display:block;
 }
 
+.edit {
+	color: #4DB4FF;
+}
+
 #edit-prof-pic {
     height: 30px;
     width: 30px;
@@ -163,7 +175,12 @@ a.svg:after {
 	left:0;
 }
 
-
+.card {
+	border: 1px solid;
+	border-color: grey;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+	
+}
 .header-img {
 	text-align: center;
 }
