@@ -11,19 +11,17 @@ body {
 }
 
 h3 {
-	
+
 }
 
 .done-button, .edit-button {
-	position: absolute;
-	top: 15px;
-	right: 15px;
+	float: right;
+	margin-top: 6px;
 }
 
 .back-button, .cancel-button {
-	position: absolute;
-	top: 15px;
-	left: 15px;
+	float: left;
+	margin-top: 6px;
 }
 
 .new-contact {

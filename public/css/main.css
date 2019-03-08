@@ -27,15 +27,21 @@ div {
 }
 
 .logout-button {
-	position: absolute;
-	top: 15px;
-	left: 15px;
+	float: left;
+  height: 33.33px;
+  margin-top: 6px;
 }
 
 .plus-button {
-	position: absolute;
-	top: 15px;
-	right: 15px;
+	float: right;
+  margin-top: 6px;
+}
+
+h3 {
+  z-index: 999;
+  margin: 0 auto;
+  display: inline-block;
+  width: calc(100% - 24px - 54px - 50px);
 }
 
 #icon-plus {
@@ -66,6 +72,7 @@ div {
 
 #topbar {
    margin: 30px 0;
+   padding: 0 25px;
 }
 
 .dropdown-menu {
