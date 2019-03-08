@@ -1,3 +1,12 @@
+body {
+    text-align: center;
+    margin: 0px;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 1.25rem;
+    line-height: normal;
+  }
+
 #login-button {
     border-radius: 15px;
     width: 90px;
@@ -8,6 +17,7 @@
 h1 {
     padding-top: 100px;
     padding-bottom: 10px;
+    font-weight: bold;
 }
 
 .field {
