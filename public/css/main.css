@@ -1,14 +1,15 @@
+body {
+  text-align: center;
+  margin: 0px;
+	font-family: Roboto;
+	font-style: normal;
+  font-size: 1.25rem;
+  line-height: normal;
+}
+
 a {
   color: blue;
   text-decoration: none;
-}
-
-body {
-  text-align: center;
-  margin: 0	px;
-  font-family: Roboto;
-  font-style: normal;
-  line-height: normal;
 }
 
 div {
@@ -30,6 +31,7 @@ div {
 	float: left;
   height: 33.33px;
   margin-top: 6px;
+  font-size: 1rem;
 }
 
 .plus-button {
@@ -38,10 +40,13 @@ div {
 }
 
 h3 {
-  z-index: 999;
-  margin: 0 auto;
-  display: inline-block;
-  width: calc(100% - 24px - 54px - 50px);
+	z-index: 999;
+	margin: 0 auto;
+	display: inline-block;
+	width: calc(100% - 24px - 54px - 50px);
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-left: -20px;
 }
 
 #icon-plus {
