@@ -3,16 +3,20 @@ body {
 	font-style: normal;
 	line-height: normal;
 	margin: 0px;
+	text-align: center;
 }
 
 .top-bar {
-	text-align: center;
 	margin: 30px 0;
 	padding: 0 25px;
 }
 
 h3 {
-
+	z-index: 999;
+	margin: 0 auto;
+	display: inline-block;
+	width: calc(100% - 24px - 54px - 50px);
+	font-size: 1.7rem;
 }
 
 .done-button, .edit-button {
