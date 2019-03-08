@@ -12,7 +12,7 @@ exports.processImage = function(request, response) {
 	var url = request.body.url;
 	response.render("newcontactB", {
 		"url": url, 
-		"img": "false"
+		"img": true
 	}); 
 	console.log(url);
 };
