@@ -11,14 +11,7 @@ exports.viewB = function(request, response){
 exports.processImage = function(request, response) {
 	var url = request.body.url;
 	response.render("newcontactB", {
-<<<<<<< HEAD
 		"url": url,
 		"img": true
 	});
-=======
-		"url": url, 
-		"img": true
-	}); 
->>>>>>> 4968731f3f887e5964564ca78b68226a71ae7f32
-	console.log(url);
 };
