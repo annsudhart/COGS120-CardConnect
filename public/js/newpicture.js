@@ -5,7 +5,7 @@ function saveCanvasImage() {
     var context = canvas.getContext('2d');
 
     dataURL = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
-	$("#url").val(dataURL);
+	  $("#url").val(dataURL);
 }
 
 function getCanvasImage() {
