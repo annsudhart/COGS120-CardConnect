@@ -1,24 +1,41 @@
-body {
+html, body {
     text-align: center;
     margin: 0px;
     font-family: Roboto;
     font-style: normal;
     font-size: 1.25rem;
     line-height: normal;
+    height: 100%;
   }
 
+.phone-screen {
+    background: #456990;
+    color: white;
+    height: 100vh;
+}
+
 #login-button {
+    margin: 20px auto;
     border-radius: 15px;
     width: 90px;
     height: 40px;
     font-size: 20px;
 }
 
+#title {
+    padding: 50px;
+    padding-top: 110px;
+}
+
+#logo {
+    max-width: 400px;
+}
+
 input {
 	font-size: 1rem;
 	margin: 0.25rem auto;
 	padding: 0.25rem;
-	border-color: grey;
+	border-color:grey;
 	border-width: 1px;
 	border-radius: 5px;
 }
@@ -29,6 +46,45 @@ h1 {
     font-weight: bold;
 }
 
+#rect-grey {
+    float: right;
+    width: 68px;
+    height: 18px;
+    margin-top: 23px;
+
+    background: #BFC0C0;
+}
+
+#rect-white {
+    position: relative;
+    float: right;
+    width: 100px;
+    height: 28px;
+    top: 48px;
+    margin-right: -68px;
+    background: #FFFFFF;
+}
+
+#rect-red {
+    position: relative;
+    float: left;
+    width: 80px;
+    height: 57px;
+    top: 551px;
+    
+    background: #EF6B53;
+}
+
+#rect-queen {
+    position: relative;
+    float: left;
+    width: 148px;
+    height: 26px;
+    background: #2D3142;
+}
+.username, .password {
+    color: black;
+}
 .field {
     padding: 20px;
 }
@@ -44,6 +100,8 @@ h1 {
 }
 
 input {
-  border: 1px solid #ccc;
+  border: 1px solid white;
+  background: white;
+  color: #456990;
   padding: 5px;
 }
