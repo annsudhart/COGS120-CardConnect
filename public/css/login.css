@@ -31,15 +31,6 @@ html, body {
     max-width: 400px;
 }
 
-input {
-	font-size: 1rem;
-	margin: 0.25rem auto;
-	padding: 0.25rem;
-	border-color:grey;
-	border-width: 1px;
-	border-radius: 5px;
-}
-
 h1 {
     padding-top: 100px;
     padding-bottom: 10px;
@@ -66,20 +57,20 @@ h1 {
 }
 
 #rect-red {
-    position: relative;
+    position: absolute;
     float: left;
     width: 80px;
     height: 57px;
-    top: 551px;
-    
+    bottom: 68px;
     background: #EF6B53;
 }
 
 #rect-queen {
-    position: relative;
+    position: absolute;
     float: left;
     width: 148px;
     height: 26px;
+    bottom: 25px;
     background: #2D3142;
 }
 .username, .password {
@@ -100,8 +91,17 @@ h1 {
 }
 
 input {
-  border: 1px solid white;
+  border: 3px solid white;
   background: white;
   color: #456990;
   padding: 5px;
+  font-size: 1rem;
+  margin: 0.25rem auto;
+  padding: 0.25rem;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none;
+  border: 3px solid #BFC0C0;
 }
