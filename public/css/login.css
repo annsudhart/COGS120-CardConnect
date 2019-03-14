@@ -100,18 +100,20 @@ input {
   font-size: 1rem;
   margin: 0.25rem auto;
   padding: 0.25rem;
-  border-radius: 5px;
+  background-color: #456990;
 }
 
 input:focus {
   outline: none;
-  border: 3px solid #BFC0C0;
 }
 
 .info {
-    color: #2D3142;
+    color: #fff;
     border: none;
     border-bottom: 1px solid white;
-    border-radius: 5px;
     padding: 10px;
+  }
+
+  ::placeholder {
+    color: rgba(255, 255, 255, 0.7);
   }
