@@ -16,6 +16,7 @@ input {
 	margin: 0.25rem auto;
 	padding: 0.25rem;
 	color: #2D3142;
+	background: none !important;
 }
 
 .top-bar {
@@ -35,6 +36,8 @@ h3 {
 
 button {
 	font-size: 20px;
+	background: none !important;
+	border: none !important;
 	color: white;
 }
 
@@ -42,6 +45,7 @@ button {
 	float: right;
 	margin-top: 6px;
 	color: white;
+	border: none !important;
 }
 
 .delete-button {
