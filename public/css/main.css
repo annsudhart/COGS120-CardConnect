@@ -1,19 +1,26 @@
-body {
+html, body {
   text-align: center;
   margin: 0px;
-	font-family: Roboto;
-	font-style: normal;
-  font-size: 1.25rem;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 1.1rem;
   line-height: normal;
+  color: #456990;
 }
 
 a {
-  color: dodgerblue;
+  color: #456990;
   text-decoration: none;
 }
 
 div {
   margin: 0px;
+}
+
+#contacts {
+  background: white;
+
+  padding: 40px;
 }
 
 .contact-list {
@@ -23,8 +30,9 @@ div {
 .phone-screen {
   position: relative;
   margin: 0 auto;
-  background: #FFFFFF;
-  width: 100%;
+  background: #456990;
+  color: white;
+  height: 100vh;
 }
 
 .logout-button {
@@ -32,11 +40,14 @@ div {
   height: 33.33px;
   margin-top: 6px;
   font-size: 1rem;
+  color: white;
 }
 
 .plus-button {
 	float: right;
   margin-top: 6px;
+  width: 10%;
+  max-width: 40px;
 }
 
 h3 {
@@ -46,7 +57,6 @@ h3 {
 	width: calc(100% - 24px - 54px - 50px);
   font-size: 1.7rem;
   font-weight: bold;
-  margin-left: -20px;
 }
 
 #icon-plus {
@@ -56,8 +66,8 @@ h3 {
 }
 
 #searchbar {
-  background: #E5E5E5;
-  margin-bottom: 20px;
+  background: #2D3142;
+  margin-bottom: 0px;
 }
 
 #search {
@@ -65,7 +75,13 @@ h3 {
   height: 40px;
   font-size: 18px;
   background: #FFFFFF;
+  color: #2D3142;
   border-radius: 10px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #BFC0C0;
+  opacity: 1; /* Firefox */
 }
 
 .searchbar-item {
@@ -76,8 +92,7 @@ h3 {
 }
 
 #topbar {
-   margin: 30px 0;
-   padding: 0 25px;
+  padding: 35px 25px;
 }
 
 .dropdown-menu {

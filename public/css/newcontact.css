@@ -3,27 +3,25 @@ body {
 	margin: 0px;
 	font-family: Roboto;
 	font-style: normal;
-	font-size: 1.25rem;
+	font-size: 1.1rem;
 	line-height: normal;
 }
 
 a {
 	text-decoration: none;
-	color: grey;
 }
 
 input {
-	font-size: 1rem;
+	font-size: 1.1rem;
 	margin: 0.25rem auto;
 	padding: 0.25rem;
-	border-color: grey;
-	border-width: 1px;
-	border-radius: 5px;
+	color: #2D3142;
 }
 
 .top-bar {
-	margin: 30px 0;
-	padding: 0 25px;
+	padding: 30px 25px;
+	background: #456990;
+	color: white;
 }
 
 h3 {
@@ -32,19 +30,28 @@ h3 {
 	display: inline-block;
 	width: calc(100% - 24px - 54px - 50px);
 	font-size: 1.7rem;
+	margin-left: 5px;
+}
+
+button {
+	font-size: 20px;
+	color: white;
 }
 
 .done-button, .edit-button {
 	float: right;
 	margin-top: 6px;
+	color: white;
 }
 
 .delete-button {
-	color: red;
+	margin: 30px;
+	color: #EF6B53;
 }
 .back-button, .cancel-button {
 	float: left;
 	margin-top: 6px;
+	color: white;
 }
 
 .new-contact {
@@ -54,7 +61,7 @@ h3 {
 
 .header-img {
 	padding: 3vh 0;
-	background: linear-gradient(180deg, #bfbfbf 60%, white 40%);
+	background: linear-gradient(180deg, #2D3142 60%, white 40%);
 }
 
 .header-text {
@@ -67,6 +74,11 @@ h3 {
 	margin: 2px 0;
 }
 
+.info {
+	color: #456990;
+	border: none;
+	border-bottom: 1px solid #2D3142;
+}
 .full-name {
 	margin-top: 0px;
 }
@@ -77,6 +89,8 @@ h3 {
 
 .body img {
 	float: left;
+	margin-top: 5px;
+	margin-left: -30px;
 }
 
 .view {
@@ -96,13 +110,22 @@ h3 {
 	position: absolute;
 	top: 40%;
 	left: -30px;
+	cursor: pointer;
 }
 
 .next {
 	position: absolute;
 	top: 40%;
 	right: -30px;
+	cursor: pointer;
+	transition: 0.6s ease;
+	
 }
+
+.prev:hover, .next:hover {
+	border-radius: 3px 0 0 3px;
+	background-color: rgba(0,0,0,0.8);
+  }
 
 .hide {
 	display: none;
@@ -117,13 +140,17 @@ h3 {
 	height: 15px;
 	width: 15px;
 	margin: 0 2px;
-	background-color: lightgrey;
+	background-color: #BFC0C0;
 	border-radius: 50%;
 	display: inline-block;
 }
 
+.active, .dot:hover {
+	background-color: #2D3142;
+  }
+  
 .highlight {
-	background-color: black;
+	background-color: #2D3142;
 }
 
 .new {
@@ -150,7 +177,7 @@ h3 {
 }
 
 .edit {
-	color: #4DB4FF;
+	/* color: #4DB4FF; */
 }
 
 #edit-prof-pic {
@@ -179,7 +206,7 @@ a.svg:after {
 
 .card {
 	border: 1px solid;
-	border-color: grey;
+	border-color: #2D3142;
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
 
 }
@@ -192,5 +219,14 @@ a.svg:after {
 }
 
 #line2 {
-	margin-left: 30px;
+
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: #BFC0C0;
+	opacity: 1; /* Firefox */
+  }
+
+.delete {
+	margin: 30px;
 }
