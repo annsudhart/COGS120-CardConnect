@@ -45,7 +45,6 @@ button {
 }
 
 .delete-button {
-	margin: 30px;
 	color: #EF6B53;
 }
 .back-button, .cancel-button {
@@ -164,6 +163,13 @@ button {
 	display: inline-block;
 }
 
+.delete {
+	margin-top: 4vh;
+	margin-bottom: 2vh;
+	display: inline-block;
+}
+
+
 .prof-pic {
 	height: fit-content;
 	margin: 0 auto;
@@ -227,6 +233,8 @@ a.svg:after {
 	opacity: 1; /* Firefox */
   }
 
-.delete {
-	margin: 30px;
+
+#icon-trash {
+	max-width: 25px;
+	margin-top: -3px;
 }

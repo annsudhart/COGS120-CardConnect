@@ -84,7 +84,8 @@
 					<input class="info" id="line2" type="text" class="new" name="line2" value="{{data.line2}}">
 				</div><br>
 				<div class="delete">
-					<a href="/deletecontact/{{data.fullName}}" onclick="return confirm('Are you sure?')" class="delete-button">Delete</a>
+					<a href="/deletecontact/{{data.fullName}}" onclick="return confirm('Are you sure?')" class="delete-button">
+						<img id="icon-trash" src="/images/icon-trash.svg">Delete</a>
 				</div>
 			</div>
 		</form>
