@@ -18,7 +18,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
 			integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-	  	<link rel="stylesheet" type="text/css" href="css/main.css">
+	  	<!-- link rel="stylesheet" type="text/css" href="css/main.css" -->
 	  	<link rel="stylesheet" type="text/css" href="css/login.css">
 	  	<script src="https://code.jquery.com/jquery-3.1.0.js"
 			integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
@@ -53,12 +53,12 @@
 			</script>
 			<form name="login" action="/" onsubmit="return validateLogin();">
 				<div class="field">
-					<p>Username</p>
-					<input type="text" name="username" class="username" width="100%">
+					<!-- p>Username</p -->
+					<input class="info" type="text" name="username" class="username" placeholder="Username" width="100%">
 				</div>
 				<div class="field">
-					<p>Password</p>
-					<input type="password" name="password" class="username" width="100%">
+					<!-- p>Password</p -->
+					<input class="info" type="password" name="password" class="username" placeholder="Password" width="100%">
 				</div>
 
 				<input type="submit" id="login-button" value="Login">

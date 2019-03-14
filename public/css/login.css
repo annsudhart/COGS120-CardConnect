@@ -20,6 +20,7 @@ p {
 
 #login-button {
     margin: 20px auto;
+    background: white;
     border-radius: 15px;
     width: 90px;
     height: 40px;
@@ -95,9 +96,6 @@ h1 {
 }
 
 input {
-  border: 3px solid white;
-  background: white;
-  color: #456990;
   padding: 5px;
   font-size: 1rem;
   margin: 0.25rem auto;
@@ -109,3 +107,11 @@ input:focus {
   outline: none;
   border: 3px solid #BFC0C0;
 }
+
+.info {
+    color: #2D3142;
+    border: none;
+    border-bottom: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+  }
