@@ -5,10 +5,11 @@
 
 var express = require('express');
 var multer  = require('multer');
+var session = require('express-session');
 
 var http = require('http');
 var path = require('path');
-var handlebars = require('express3-handlebars')
+var handlebars = require('express-handlebars')
 
 var contactlist = require('./routes/contactlist');
 var newcontact = require('./routes/newcontact');
@@ -62,7 +63,7 @@ app.use(express.json());
 app.use(express.urlencoded());
 app.use(express.methodOverride());
 app.use(express.cookieParser('IxD secret key'));
-app.use(express.session());
+app.use(session);
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 // default options
