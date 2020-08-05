@@ -15,7 +15,7 @@
     "async": "^2.6.2",
     "body-parser": "^1.18.3",
     "express": "3.x",
-    "express-fileupload": "^1.1.1-alpha.3",
+    "express-fileupload": "^1.1.9",
     "express3-handlebars": "*",
     "mongodb": "*",
     "mongoose": "*",
